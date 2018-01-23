@@ -1,0 +1,11 @@
+span[blue]{
+    color: #1f85c3;
+}
+span[green]{
+    color: #4CAF50;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
