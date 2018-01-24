@@ -1,0 +1,6 @@
+router-outlet{
+    padding-top:100px;
+}
+div[blank]{
+    height:55px;
+}

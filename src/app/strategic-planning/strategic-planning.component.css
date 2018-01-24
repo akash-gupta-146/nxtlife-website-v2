@@ -1,0 +1,48 @@
+div[image] img{
+    width:100%;
+}
+
+div[text]{
+    display:grid;
+}
+div[text] div[para]{
+    align-self: center;
+    justify-self: center;
+}
+div[screenshots]{
+    /* padding:0px 0; */
+    text-align:center;
+    display:flex;
+    overflow-x: scroll;
+}
+
+div[screenshots] div[block]{
+    margin:0 5px;
+}
+
+div[screenshots] div[block] img{
+    height:200px;
+}
+
+div[records] {
+    position: relative;
+}
+div[records] div[block]{
+    text-align: center;
+    color:white;
+}
+div[records] div[block] img{
+    width: 150px;
+    display: block;
+    margin:auto;
+}
+div[parallelx1]{
+    background-attachment: fixed !important;
+    min-height:180px;
+    background:url(http://www.slate.com/content/dam/slate/articles/arts/gaming/2016/10/161013_GAME_chess-promo.jpg.CROP.promo-xlarge2.jpg)
+}
+div[content]{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

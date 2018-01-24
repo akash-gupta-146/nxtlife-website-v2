@@ -1,0 +1,25 @@
+div[overlay]{
+    background:white;
+}
+div[overlay] img{
+    /* opacity:0.6; */
+}
+
+div[cover]{
+    position:relative;
+}
+.carousel-item div[caption]{
+    color:white;
+    text-align:center;
+    position:absolute;
+    bottom:3.5vh;
+    z-index:1;
+    width:100%;
+}
+
+.carousel-item div[caption] h2{
+    font-size:3vw;
+}
+.carousel-item div[caption] span{
+    font-size:2.5vw;
+}
