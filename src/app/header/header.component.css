@@ -10,50 +10,78 @@
     }
 }
 
-
-/* .slideUp{
-    animation-name: slideUp;
-    animation-duration: 1s;
-} */
-.dropdown-menu{
-    animation-name: slideUp;
-    border-radius: 0px;
-    animation-duration: 0.3s !important;
-}
-
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
-
-.dropdown-menu:hover{
-    display: block;
-}
-
-.active a{
-    color:var(--main-one) !important;
-}
-span[blue]{
-    color: var(--main-one) ;
-}
-span[green]{
-    color: var(--main-two);
-}
 .navbar{
     /* position: fixed;
     z-index: 1;
     width: 100%; */
-    background: #fff;
     color: #fff;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 10;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    padding: 10px 7vw;
 }
-/* .navbar-nav li a{
+.navbar-brand span[blue]{
+    color: var(--main-one) ;
+}
+.navbar-brand span[green]{
+    color: var(--main-two);
+}
+.navbar-brand{
+    display:none;
+}
+
+.navbar-nav li a{
     color:white;
 }
-.navbar-nav li .dropdown-item{
-    color:rgb(41, 41, 41);
-} */
+.navbar-nav .active, .navbar-nav li:hover{
+    color:white;
+    border-bottom:2px solid white;
+}
+.dropdown-menu{
+    animation-name: slideUp;
+    border-radius: 0px;
+    animation-duration: 0.3s !important;
+    background: #0000004a;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:2px solid white;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu .dropdown-item:hover,.dropdown-menu .dropdown-item:focus, .dropdown-menu .active  {
+    transition: 0.5s;
+    color:black !important;
+}
+
+
+/* //scrolled page header styles */
+.page-scroll-header {
+    transition: 0.5s;
+    background-color: #fff !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.582);
+    padding:0 7vw;
+}
+.page-scroll-header .navbar-nav li a{
+    color:var(--main-one);
+}
+.page-scroll-header .navbar-nav .active, .page-scroll-header  .navbar-nav li:hover{
+    color:black;
+    border-bottom:3px solid var(--main-one);
+}
+.page-scroll-header .navbar-brand{
+    display:block;
+}
+.page-scroll-header .dropdown-menu{
+    animation-name: slideUp;
+    border-radius: 0px;
+    animation-duration: 0.3s !important;
+    background: white;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:2px solid var(--main-one);
+}

@@ -3,3 +3,137 @@
     --main-one:#1f85c3;
     --main-two: #4CAF50;
 }
+
+body{
+    background:#fff2f2;
+}
+
+/* ///Animation for images */
+@keyframes slideInUp {
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInUp {
+    animation-name: slideInUp;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+  }
+
+@keyframes bridge1{
+    from{
+       left:-500px;
+       opacity:1;
+    }
+    to{
+        left:0;
+        opacity:1;
+    }
+}
+@keyframes bridge2{
+    from{
+       right:-500px;
+       opacity:1;
+    }
+    to{
+        right:20px;
+        opacity:1;
+    }
+}
+@keyframes hand{
+    from{
+        top:-500px;
+        opacity:1;
+    }
+    to{
+        top:10px;
+        opacity:1;
+    }
+}
+@keyframes fade{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes slideOutDown {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    to {
+      visibility: hidden;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  
+  .slideOutDown {
+    animation-name: slideOutDown;
+  }
+  
+.image-effect .animating{
+    position:absolute;
+}
+.image-effect .bridge1{
+    width:40%;
+    top:47%;
+    animation-name:bridge1 !important;
+    animation-duration:0.5s;
+    animation-delay:1s;
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.image-effect .bridge2{
+    width:40%;
+    top:47%;
+    animation-name:bridge2 !important;
+    animation-duration:0.5s;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    animation-timing-function: linear;
+}
+
+.image-effect .hand{
+    top:10px;
+    width:40%;
+    left: 50%;
+    transform: translate(-50%);
+    animation-name:hand !important;
+    animation-duration:0.9s;
+    animation-delay:1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-timing-function: linear;
+}
+div[caption]{
+    animation-name: fade;
+    opacity:0;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-delay:1.5s;
+}

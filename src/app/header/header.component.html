@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" [class.fixed]="fixed">
+<nav class="navbar navbar-expand-lg navbar-light" [class.fixed]="fixed" [ngClass]= "{'page-scroll-header': isScrolled}">
   <a class="navbar-brand" href="#">
     <img src="/assets/images/nxtlife-logo.svg" width="30" height="30" alt="">
     <span blue>Nxt</span><span green>Life</span>
@@ -24,16 +24,23 @@
               Products
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item"  >SEM</a>
-              <a class="dropdown-item" href="#">LEM</a>
-              <a class="dropdown-item" href="#">CEM</a>
-              <a class="dropdown-item" href="#">SRM</a>
-              <a class="dropdown-item" routerLink="sp">SP</a>
+              <a class="dropdown-item"  >Stakeholders’ Experience Management</a>
+              <a class="dropdown-item" href="#">Learning Experience Management</a>
+              <a class="dropdown-item" href="#">Customer Experience Management</a>
+              <a class="dropdown-item" href="#">Stakeholders’ Risk Management</a>
+              <a class="dropdown-item" routerLink="sp">Strategic Planning</a>
             </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"  >Consultancy</a>
+            <a class="dropdown-item" href="#">Training</a>
+            <a class="dropdown-item" href="#">Software Development</a>
+          </div>
+    </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About us</a>
         </li>
