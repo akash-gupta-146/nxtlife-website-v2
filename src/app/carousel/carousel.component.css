@@ -8,6 +8,7 @@ div[overlay] img{
 div[cover]{
     position:relative;
 }
+
 .carousel-item div[caption]{
     color:white;
     text-align:center;
@@ -15,6 +16,12 @@ div[cover]{
     bottom:3.5vh;
     z-index:1;
     width:100%;
+}
+div[green]{
+    color: rgb(0, 55, 0) !important;
+}
+div[dark]{
+    color:black !important;
 }
 
 .carousel-item div[caption] h2{

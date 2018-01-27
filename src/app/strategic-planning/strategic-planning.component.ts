@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-strategic-planning',
   templateUrl: './strategic-planning.component.html',
