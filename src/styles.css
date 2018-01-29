@@ -549,3 +549,46 @@ div[block-heading] h2:after{
   background: var(--main-one);
 }
 /* end of block heading */
+
+
+/* /parallelex scroll styles */
+.parallelex-block {
+  position: relative;
+  margin-top:20px;
+  width:100%;
+}
+div[parallelex-background]{
+  background-attachment: fixed !important;
+  width:100%;
+  /* min-height:100px; */
+  background-size: contain !important;
+}
+.parallel-image1{
+  background:url(https://abovethelaw.com/wp-content/uploads/iStock_000027197562_Large.jpg);
+}
+.parallel-image2{
+  background:url(http://ak3.picdn.net/shutterstock/videos/9082253/thumb/10.jpg);
+}
+div[parallelex-content]{
+  /* position: absolute; */
+  padding:20px 10px;
+  top: 0;
+  background: rgba(37, 37, 37, 0.82);
+  width: 100%;
+  color:white;
+  text-align: center;
+  padding:50px;
+}
+div[parallelx2]{
+  background-attachment: fixed !important;
+  min-height:260px;
+  background-size: contain !important;
+}
+
+.animate-now{
+  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+/* end of parallelx scroll */

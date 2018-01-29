@@ -84,37 +84,5 @@ div[cover]{
     text-align: right;
 }
 
-/* /parallelex scroll styles */
-.parallelex-block {
-    position: relative;
-    margin-top:20px;
-}
-div[parallelex-background]{
-    background-attachment: fixed !important;
-    width:100%;
-    /* min-height:100px; */
-    background-size: contain !important;
-}
-.parallel-image1{
-    background:url(https://abovethelaw.com/wp-content/uploads/iStock_000027197562_Large.jpg);
-}
-div[parallelex-content]{
-    /* position: absolute; */
-    padding:20px 10px;
-    top: 0;
-    background: rgba(37, 37, 37, 0.82);
-    width: 100%;
-    color:white;
-}
-div[parallelx2]{
-    background-attachment: fixed !important;
-    min-height:260px;
-    background-size: contain !important;
-}
 
-.animate-now{
-    animation-delay: 1s;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-}
 
