@@ -1,0 +1,13 @@
+/* product card */
+
+div[card]{
+    width:300px;
+    height:200px;
+    border:1px solid var(--main-one);
+    margin:10px;
+}
+div[card]:hover{
+    transition: 0.9s;
+    background:var(--main-one);
+}
+/* end of card */

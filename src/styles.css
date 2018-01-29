@@ -266,3 +266,84 @@ div[caption]{
     animation-fill-mode: forwards;
     animation-delay:1s;
 }
+
+/* //list */
+div[nxtlife-list] div[li]{
+    display:flex;
+    margin:30px auto;
+}
+div[nxtlife-list] div[li] div[bullet]{
+    margin-right:10px;
+    padding-right:10px; 
+}
+div[nxtlife-list] div[li] div[bullet] i{
+    font-size: 24px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    width: 64px;
+    border-radius: 100%;
+    color: #45aed6;
+    box-shadow: inset 0 0 0 1px #d7d7d7;
+    -webkit-box-shadow: inset 0 0 0 1px #d7d7d7;
+    transition: background-color 400ms, background-color 400ms;
+    position: relative;order:3px solid white;
+    
+}
+
+div[nxtlife-list] div[li] div[bullet] i:after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    right: -10px;
+    border: 4px solid #fff;
+    border-radius: 20px;
+    background: #45aed6;
+}
+
+div[li]:hover div[bullet] i{
+    color: white !important;
+    line-height: 57px !important;
+    background:#45aed6 !important;
+    border:4px solid white;
+    box-shadow: inset 0 0 0 5px rgba(77, 77, 77, 0.808);
+    -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.8);
+}
+/* // end of list */
+
+/* //block heading */
+div[block-heading]{
+  text-align:center;
+}
+div[block-heading] h2{
+  position:relative;
+  margin:44px;
+  color:#676767;
+}
+div[block-heading] h2:before{
+  content: "";
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -70px;
+  height: 2px;
+  background: #ebebeb;
+  bottom: -10px;
+}
+div[block-heading] h2:after{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -12px;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  background: var(--main-one);
+}
+/* end of block heading */

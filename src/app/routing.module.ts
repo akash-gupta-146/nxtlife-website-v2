@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { StrategicPlanningComponent } from './strategic-planning/strategic-planning.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch:'full' },
-  { path:'home', component:CarouselComponent  },
+  { path:'home', component:HomeComponent  },
   { path:'sp', component: StrategicPlanningComponent }
 ]
 
