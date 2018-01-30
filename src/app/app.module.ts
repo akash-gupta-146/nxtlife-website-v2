@@ -8,6 +8,7 @@ import { StrategicPlanningComponent } from './strategic-planning/strategic-plann
 import { RoutingModule } from './/routing.module';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
+import { NxtlifeServicesComponent } from './nxtlife-services/nxtlife-services.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     CarouselComponent,
     StrategicPlanningComponent,
     ProductsComponent,
-    HomeComponent
+    HomeComponent,
+    NxtlifeServicesComponent
   ],
   imports: [
     BrowserModule,
