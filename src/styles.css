@@ -407,8 +407,6 @@ div[bird]{
   animation-fill-mode: forwards;
 }
 
-
-
 #bird div {
   position:absolute;
 }
@@ -418,12 +416,12 @@ div[bird]{
   -webkit-animation: bob 0.7s infinite cubic-bezier(0.7, 0.7, 0.1, 0.4);
  }
 
-
 #body1,#body2,#wing-l,#wing-r {
   	width: 0px; height: 0px;
     border-color: transparent;
     border-style: solid;
 }
+
 #body1 {
 	border-width: 15px; 
   border-left-width:25px;
@@ -468,17 +466,18 @@ div[bird]{
   left:10px; bottom:10px;
   color: #444;
 }
-/* bird animation */
-/* //list */
+
 div[nxtlife-list] div[li]{
     display:flex;
     margin:30px auto;
 }
+
 div[nxtlife-list] div[li] div[bullet]{
     margin-right:10px;
     padding-right:10px; 
 }
-div[nxtlife-list] div[li] div[bullet] i{
+
+div[nxtlife-list] div[li] div[bullet] i {
     font-size: 24px;
     height: 64px;
     line-height: 64px;
@@ -490,7 +489,6 @@ div[nxtlife-list] div[li] div[bullet] i{
     -webkit-box-shadow: inset 0 0 0 1px #d7d7d7;
     transition: background-color 400ms, background-color 400ms;
     position: relative;order:3px solid white;
-    
 }
 
 div[nxtlife-list] div[li] div[bullet] i:after{
@@ -568,6 +566,9 @@ div[parallelex-background]{
 }
 .parallel-image2{
   background:url(https://tatendachawanzwa.com/wp-content/uploads/2015/07/001_demo2.jpg);
+}
+.parallel-image3{
+background:url(http://toolkitcompany.com/Images/home-wallpaper-4.jpg);
 }
 div[parallelex-content]{
   /* position: absolute; */
