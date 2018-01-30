@@ -1,0 +1,51 @@
+div[contact-details]{
+    display: block;
+    margin:auto;
+    background:white;
+    padding:20px;
+    box-shadow:0 4px 8px gray;
+}
+div[contact-details]{
+    
+}
+ table td{
+    color:var(--main-one)
+ }
+div[contact-details] tr td[icon]{
+    width:20%;
+}
+div[contact-details] tr td[detail]{
+    width:80%;
+    font-size:13px;
+}
+
+div[contact-form]{
+    padding:20px;
+    display: block;
+    margin:auto;
+    background:white;
+    padding:20px;
+    box-shadow:0 4px 8px gray;
+}
+input, textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid gray;
+}
+.submit-button{
+    float: right;
+    border: 1px solid var(--main-one);
+    background: var(--main-one);
+    color: white;
+    padding: 10px 40px;
+    font-size: 1.5vw;
+    transition:0.5s;
+}
+.submit-button:hover{
+    box-shadow:1px 1px 17px var(--main-one);
+}
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
