@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Block } from '../block-heading/block-heading.component';
 
 @Component({
   selector: 'app-nxtlife-services',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nxtlife-services.component.css']
 })
 export class NxtlifeServicesComponent implements OnInit {
-
-  constructor() { }
-
+  heading : Block;
+  
+    constructor() {
+      this.heading = { title: 'Services', paragraph: `There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.There
+      are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus`}     }
   ngOnInit() {
   }
 

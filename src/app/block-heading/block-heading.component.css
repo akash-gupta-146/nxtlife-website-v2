@@ -1,0 +1,33 @@
+/* //block heading */
+div[block-heading]{
+    text-align:center;
+  }
+  div[block-heading] h2{
+    position:relative;
+    margin:44px;
+    color:#676767;
+  }
+  div[block-heading] h2:before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -70px;
+    height: 2px;
+    background: #ebebeb;
+    bottom: -10px;
+  }
+  div[block-heading] h2:after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -12px;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    background: var(--main-one);
+  }
+  /* end of block heading */

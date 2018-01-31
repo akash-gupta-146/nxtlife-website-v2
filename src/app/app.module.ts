@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { NxtlifeServicesComponent } from './nxtlife-services/nxtlife-services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { AgmCoreModule } from '@agm/core';
+import { BlockHeadingComponent } from './block-heading/block-heading.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,15 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     NxtlifeServicesComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    BlockHeadingComponent
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCaq46VJQf5eWFf2RAZQLUzA_YzMDA1tQA'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

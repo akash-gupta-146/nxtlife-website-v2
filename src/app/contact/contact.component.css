@@ -49,3 +49,6 @@ input, textarea{
         height: 400px;
         background-color: grey;
       }
+      agm-map {
+        height: 300px;
+      }
