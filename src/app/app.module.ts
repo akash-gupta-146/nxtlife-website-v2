@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AgmCoreModule } from '@agm/core';
 import { BlockHeadingComponent } from './block-heading/block-heading.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { BlockHeadingComponent } from './block-heading/block-heading.component';
   imports: [
     BrowserModule,
     RoutingModule,
+    ScrollToModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCaq46VJQf5eWFf2RAZQLUzA_YzMDA1tQA'
     })
