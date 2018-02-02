@@ -1,58 +1,14 @@
 <div class="container bar">
     <app-block-heading [blockData]="heading"></app-block-heading>
   <div class="row" nxtlife-list>
-    <div class="col-lg-6 col-sm-12" routerLink="/sp">
+    <div class="col-lg-6 col-sm-12" routerLink="/sp" *ngFor="let product of products">
       <div li class="animation fadeInRight">
         <div bullet>
           <i class="fa fa-check-square-o"></i>
         </div>
         <div text>
-          <h5>Strategic Planning</h5>
-          <p>Links Today With Tomorrow</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-sm-12">
-      <div li class="animation fadeInRight">
-        <div bullet>
-          <i class="fa fa-check-square-o"></i>
-        </div>
-        <div text>
-          <h5>Stakeholders’ Experience Management</h5>
-          <p>Design & Manage stakeholders' journey</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-sm-12">
-      <div li class="animation fadeInRight">
-        <div bullet>
-          <i class="fa fa-check-square-o"></i>
-        </div>
-        <div text>
-          <h5>Risk Management & Internal Audit</h5>
-          <p>consectetur adipiscing elit. Etiam posuere urna in suscipit tempor</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-sm-12">
-      <div li class="animation fadeInRight">
-        <div bullet>
-          <i class="fa fa-check-square-o"></i>
-        </div>
-        <div text>
-          <h5>Quality Assurance & Accreditation</h5>
-          <p>consectetur adipiscing elit. Etiam posuere urna in suscipit tempor</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-sm-12">
-      <div li class="animation fadeInRight">
-        <div bullet>
-          <i class="fa fa-check-square-o"></i>
-        </div>
-        <div text>
-          <h5>Learning Experience & Management</h5>
-          <p>consectetur adipiscing elit. Etiam posuere urna in suscipit tempor</p>
+          <h5>{{ product.name }}</h5>
+          <p>{{ product.description }}</p>
         </div>
       </div>
     </div>
