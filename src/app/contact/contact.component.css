@@ -26,6 +26,7 @@ div[contact-form]{
     background:white;
     padding:20px;
     box-shadow:0 4px 8px gray;
+    border-radius: 0 25px 0 25px;
 }
 input, textarea{
     width:100%;
@@ -39,10 +40,12 @@ input, textarea{
     color: white;
     padding: 10px 40px;
     font-size: 1.5vw;
-    transition:0.5s;
+    transition:0.2s;
 }
 .submit-button:hover{
-    box-shadow:1px 1px 17px var(--main-one);
+    background:var(--main-two);
+    box-shadow:1px 1px 5px var(--main-two);
+    border: 1px solid var(--main-two);
 }
       #map {
         width: 100%;

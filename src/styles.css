@@ -3,7 +3,11 @@
     --main-one:#1f85c3;
     --main-two: #4CAF50;
 }
-
+/* bootstrap default */
+a:focus{
+  box-shadow:none !important;
+}
+/* end of bootstrap default */
 body{
     background:#fff2f2;
 }

@@ -65,10 +65,6 @@
     font-size: inherit;
 }
 
-.dropdown:hover i{
-    opacity:0;
-}
-
 
 /* //scrolled page header styles */
 .page-scroll-header {

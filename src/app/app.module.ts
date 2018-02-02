@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AgmCoreModule } from '@agm/core';
 import { BlockHeadingComponent } from './block-heading/block-heading.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ScreenshotsComponent } from './screenshots/screenshots.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     NxtlifeServicesComponent,
     AboutComponent,
     ContactComponent,
-    BlockHeadingComponent
+    BlockHeadingComponent,
+    ScreenshotsComponent
   ],
   imports: [
     BrowserModule,
