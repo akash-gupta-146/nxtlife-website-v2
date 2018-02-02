@@ -1,0 +1,22 @@
+<div screenshots>
+  <div block  data-toggle="modal" *ngFor="let image of images;let i = index" (click)="setImage(i)" data-target="#image-modal">
+    <div  style="width: 18rem;">
+      <img [src]="image.src" >
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+            <span aria-hidden="true" data-dismiss="modal">&times;</span>
+        <img class="modal-image" [src]="images[imageId].src">
+        <div navigation-buttons>
+          <!-- <button class="btn btn-small" (click)="nextPic()"> next </button> -->
+            <i class="btn material-icons" left (click)="previousPic()" *ngIf="imageId >= 1">keyboard_arrow_left</i>
+            <i class="btn material-icons" right (click)="nextPic()" *ngIf="imageId <= images.length-2">keyboard_arrow_right</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

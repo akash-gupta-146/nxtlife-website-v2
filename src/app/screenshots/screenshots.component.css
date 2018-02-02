@@ -1,0 +1,69 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+div[screenshots]{
+    display:flex;
+    overflow-x: scroll;
+}
+
+div[screenshots] div[block]{
+    /* margin:0 5px; */
+}
+
+div[screenshots] div[block] img{
+    height:200px;
+    width:300px;
+    transition: 0.2s;
+}
+div[screenshots] div[block] img:hover{
+    padding:20px;
+}
+div[block]{
+    position: relative;
+    transition: 0.2s;
+}
+
+.modal-content span{
+    position: absolute;;
+    right:20px;
+    cursor: pointer;
+    font-size: 40px;
+}
+.modal-content span:hover{
+    color:var(--main-one) !important;
+}
+.modal-image{
+    width:100%;
+}
+.modal-content{
+    background:transparent;
+}
+
+div[navigation-buttons]{
+    position: absolute;
+    top:50%;
+    transform:translate(-50%);
+    left:50%;;  
+    width: 100vw;
+}
+
+div[navigation-buttons] i{
+    position: absolute;
+    font-size: 5vw;
+    border-radius: 50%;
+    border: 0.2vw solid white;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+div[navigation-buttons] i:hover{
+    background:var(--main-one)
+}
+
+div[navigation-buttons] i[left]{
+    left:4vw;
+}
+
+div[navigation-buttons] i[right]{
+    right:4vw;
+}

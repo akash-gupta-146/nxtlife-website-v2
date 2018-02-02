@@ -1,7 +1,3 @@
-::-webkit-scrollbar { 
-    display: none; 
-}
-
 div[image] img{
     width:100%;
 }
@@ -13,22 +9,6 @@ div[text]{
 div[text] div[para]{
     align-self: center;
     justify-self: center;
-}
-
-div[screenshots]{
-    /* padding:0px 0; */
-    text-align:center;
-    display:flex;
-    overflow-x: scroll;
-    margin-top:20px;
-}
-
-div[screenshots] div[block]{
-    margin:0 5px;
-}
-
-div[screenshots] div[block] img{
-    height:200px;
 }
 
 
