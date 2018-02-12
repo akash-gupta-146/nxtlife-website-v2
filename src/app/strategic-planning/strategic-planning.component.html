@@ -15,6 +15,7 @@
       </div>
     </div>
   </div>
+</div>
   <!-- First block -->
       <app-block-heading [blockData]="heading[0]"></app-block-heading>
       <app-left-image [paraData]="paraData[0]"></app-left-image>
@@ -53,48 +54,7 @@
   <!-- end of fluid section -->
 
   <!-- Third block -->
-  <div class="container bar">
-      <app-block-heading [blockData]="heading[2]"></app-block-heading>
-    <div class="row">
-      <div image class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <img class="animation fadeInLeft" src="assets/images/benefits.png">
-      </div>
-      <div text class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <div nxtlife-list class="animation fadeInRight">
-          <div li>
-            <div bullet>
-              <i class="fa fa-check-square-o"></i>
-            </div>
-            <div text>
-                Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at.
-            </div>
-          </div>
-          <div li>
-              <div bullet>
-                <i class="fa fa-check-square-o"></i>
-              </div>
-              <div text>
-                  Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at.Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at.
-              </div>
-            </div>
-            <div li>
-                <div bullet>
-                  <i class="fa fa-check-square-o"></i>
-                </div>
-                <div text>
-                    Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at.Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at.
-                </div>
-              </div>
-              <div li>
-                  <div bullet>
-                    <i class="fa fa-check-square-o"></i>
-                  </div>
-                  <div text>
-                      Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at.
-                  </div>
-                </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  <app-block-heading [blockData]="heading[2]"></app-block-heading>
+  <app-dual-list [listData]="listData"></app-dual-list>
+  <!-- End of Third block -->
+  

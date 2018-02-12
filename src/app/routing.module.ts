@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { StrategicPlanningComponent } from './strategic-planning/strategic-planning.component';
 import { HomeComponent } from './home/home.component';
+import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch:'full' },
+  { path:'', redirectTo: 'home', pathMatch:'full' },
   { path:'home', component:HomeComponent  },
-  { path:'sp', component: StrategicPlanningComponent }
+  { path:'sp', component: StrategicPlanningComponent },
+  { path:'qa', component: QualityAssuranceComponent }
 ]
 
 @NgModule({

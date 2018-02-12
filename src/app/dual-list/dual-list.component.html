@@ -1,0 +1,15 @@
+<div class="container bar">
+<div class="row" nxtlife-list>
+  <div class="col-lg-6 col-sm-12" routerLink="/sp" *ngFor="let data of listData">
+    <div li class="animation fadeInRight">
+      <div bullet>
+        <i class="fa fa-check-square-o"></i>
+      </div>
+      <div text>
+        <h5>{{ data.name }}</h5>
+        <p>{{ data.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

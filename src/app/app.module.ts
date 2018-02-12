@@ -17,6 +17,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
 import { LeftImageComponent } from './left-image/left-image.component';
 import { RightImageComponent } from './right-image/right-image.component';
+import { DualListComponent } from './dual-list/dual-list.component';
+import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { RightImageComponent } from './right-image/right-image.component';
     BlockHeadingComponent,
     ScreenshotsComponent,
     LeftImageComponent,
-    RightImageComponent
+    RightImageComponent,
+    DualListComponent,
+    QualityAssuranceComponent
   ],
   imports: [
     BrowserModule,

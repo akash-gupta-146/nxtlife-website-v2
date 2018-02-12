@@ -38,7 +38,7 @@ export class ProductsComponent implements OnInit {
           name:'Quality Assurance & Accreditation',
           description:'consectetur adipiscing elit. Etiam posuere urna in suscipit tempor',
           icon:'',
-          route:''
+          route:'qa'
         },
         {
           name:'Learning Experience & Management',
