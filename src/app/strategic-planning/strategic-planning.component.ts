@@ -29,18 +29,11 @@ export class StrategicPlanningComponent implements OnInit {
       this.paraData = [
         {
           image: 'assets/images/carousel/sp/higher-education.png',
-          paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta magna quis augue ornare, ut placerat nisl porta. Vivamus
-          bibendum mollis sapien, vitae iaculis nibh aliquam ut. Proin tincidunt eros eu odio malesuada bibendum. Curabitur
-          eget pharetra eros. Sed rutrum est ex, ut gravida tellus elementum ut. Ut fringilla pellentesque massa vel fringilla.
-          Vivamus molestie malesuada mi, non interdum mi semper luctus. Ut pharetra diam quis consectetur semper.`,
+          paragraph: `Strategic planning is a bridge that links an organization’s today with tomorrow.  A properly developed, implemented and monitored plan keeps an organization focused on its priorities by ensuring that all resources are spent in line with the goals and objectives. Strategic planning has to be a disciplined effort that is monitored regularly to ensure all stakeholders are working towards common goals to achieve intended outcomes. `,
         },
         {
           image: 'assets/images/product.png',
-          paragraph: `Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at, feugiat porttitor massa.
-          Vivamus gravida eget ligula eu ullamcorper. Sed interdum sollicitudin tortor tincidunt pretium. Cras vel dapibus
-          erat. Pellentesque metus erat, suscipit non felis a, sagittis pretium quam. Proin pretium a arcu ut ultricies.
-          Sed porta mattis felis, ut varius arcu scelerisque eu. Praesent facilisis ornare elit. Sed ut ex a est mattis
-          tincidunt. In tellus justo, aliquam sit amet libero quis, pretium bibendum massa.`,
+          paragraph: `Our strategic planning software has been developed in consultation with senior higher education administrators with 15-20 years of experience each.  There are many solutions available in the market, which can be used for planning, but most of them mostly cater the industry or are too expensive to be affordable for higher education institutions with small budgets. Our solution is a cost effective solution for higher education institutions with budget of any size. `,
         }
       ]
 
