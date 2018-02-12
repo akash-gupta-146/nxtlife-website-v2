@@ -16,25 +16,8 @@
     </div>
   </div>
   <!-- First block -->
-  <div class="container bar">
       <app-block-heading [blockData]="heading[0]"></app-block-heading>
-      
-    <div class="row">
-      <div image class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <img class="animation fadeInLeft" src="assets/images/carousel/sp/higher-education.png">
-      </div>
-      <div text class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <div para class="animation fadeInRight">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta magna quis augue ornare, ut placerat nisl porta. Vivamus
-            bibendum mollis sapien, vitae iaculis nibh aliquam ut. Proin tincidunt eros eu odio malesuada bibendum. Curabitur
-            eget pharetra eros. Sed rutrum est ex, ut gravida tellus elementum ut. Ut fringilla pellentesque massa vel fringilla.
-            Vivamus molestie malesuada mi, non interdum mi semper luctus. Ut pharetra diam quis consectetur semper.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+      <app-left-image [paraData]="paraData[0]"></app-left-image>
   <!-- end of first block -->
 
   <!-- fluid section/parallelex -->
@@ -54,26 +37,8 @@
   <!-- end of fluid section -->
 
   <!-- Second block -->
-  <div class="container bar">
       <app-block-heading [blockData]="heading[1]"></app-block-heading>
-    <div class="row level eighty">
-      <div text class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <div para class="animation fadeInLeft">
-        
-          <p>
-            Phasellus malesuada sit amet orci sit amet ultricies. Vestibulum elit tellus, rhoncus ac neque at, feugiat porttitor massa.
-            Vivamus gravida eget ligula eu ullamcorper. Sed interdum sollicitudin tortor tincidunt pretium. Cras vel dapibus
-            erat. Pellentesque metus erat, suscipit non felis a, sagittis pretium quam. Proin pretium a arcu ut ultricies.
-            Sed porta mattis felis, ut varius arcu scelerisque eu. Praesent facilisis ornare elit. Sed ut ex a est mattis
-            tincidunt. In tellus justo, aliquam sit amet libero quis, pretium bibendum massa.
-          </p>
-        </div>
-      </div>
-      <div image class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <img class="animation fadeInRight" src="assets/images/product.png">
-      </div>
-    </div>
-  </div>
+      <app-right-image [paraData]="paraData[1]"></app-right-image>
   <!-- end of second block -->
 
 

@@ -1,0 +1,12 @@
+div[image] img{
+    width:100%;
+}
+
+div[text]{
+    display:grid;
+}
+
+div[text] div[para]{
+    align-self: center;
+    justify-self: center;
+}

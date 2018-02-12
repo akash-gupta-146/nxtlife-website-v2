@@ -37,6 +37,7 @@ div[overlay] img{
 div[cover]{
     position:relative;
 }
+
 .carousel-item div[caption]{
     color:white;
     text-align:center;

@@ -15,6 +15,8 @@ import { AgmCoreModule } from '@agm/core';
 import { BlockHeadingComponent } from './block-heading/block-heading.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
+import { LeftImageComponent } from './left-image/left-image.component';
+import { RightImageComponent } from './right-image/right-image.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ScreenshotsComponent } from './screenshots/screenshots.component';
     AboutComponent,
     ContactComponent,
     BlockHeadingComponent,
-    ScreenshotsComponent
+    ScreenshotsComponent,
+    LeftImageComponent,
+    RightImageComponent
   ],
   imports: [
     BrowserModule,
