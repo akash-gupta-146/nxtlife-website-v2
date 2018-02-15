@@ -41,7 +41,7 @@ div[text] div[para]{
     opacity: 1;
 }
 
-.product-title{
+/* .product-title{
     opacity: 1;
     font-size: 3vw;
     position: fixed;
@@ -54,7 +54,7 @@ div[text] div[para]{
 }
 .page-scroll-header .product-title{
     opacity: 0;
-}
+} */
 /* end of header */
 
 /* Top header */
@@ -106,6 +106,10 @@ div[text]{
     line-height: 52px;
     text-align: left;
 }
+.two-col-block div[title] .main{
+    font-size:40px;
+    color:#aa874f;
+}
 .two-col-block div[title]:after{
     content: "";
     position: absolute;
@@ -135,6 +139,7 @@ div[text]{
         margin-bottom:20px;
         font-size: 18px;
         line-height: 28px;
+        white-space: pre-line;
     }
 /* two column block */
 

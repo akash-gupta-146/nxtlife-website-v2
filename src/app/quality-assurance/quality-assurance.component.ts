@@ -10,7 +10,7 @@ import { FabList } from '../fab-title/fab-title.component';
   styleUrls: ['./quality-assurance.component.css'],
   host: {
     '(window:scroll)': 'updateHeader($event)'
-}
+  }
 })
 export class QualityAssuranceComponent implements OnInit {
 
@@ -19,11 +19,11 @@ export class QualityAssuranceComponent implements OnInit {
   startPos: Number = 0;
   changePos: Number = 140;
 
-  heading : Block[];
+  heading: Block[];
   paraData: ParaImage[];
   listData: ListData[];
   fabList: FabList;
-  constructor() { 
+  constructor() {
 
     this.fabList =
       {
@@ -36,16 +36,16 @@ export class QualityAssuranceComponent implements OnInit {
       };
 
     this.heading = [
-      { 
-        title: 'Quality Assurance in higher education', 
+      {
+        title: 'Quality Assurance in higher education',
         paragraph: ''
       },
-      { 
-        title: 'Product Description', 
+      {
+        title: 'Product Description',
         paragraph: ''
       },
-      { 
-        title: 'Benefits', 
+      {
+        title: 'Benefits',
         paragraph: ''
       },
     ];
@@ -67,73 +67,73 @@ export class QualityAssuranceComponent implements OnInit {
 
     this.listData = [
       {
-        name:'Time-resource effective solution that links planning, risk and QA.',
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        name: 'Time-resource effective solution that links planning, risk and QA.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       },
       {
-        name:'Manage, organize and track all your QA activities in a central places',
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        name: 'Manage, organize and track all your QA activities in a central places',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       },
       {
-        name:'Flexible enough to handle multiple campuses hierarchy',
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        name: 'Flexible enough to handle multiple campuses hierarchy',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       },
       {
-        name:'Easily access for entire QA team – either hosted on cloud or your own servers.',
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        name: 'Easily access for entire QA team – either hosted on cloud or your own servers.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       },
       {
-        name:`Run surveys and polls and link data directly with the Risk Management Systen and/Or
+        name: `Run surveys and polls and link data directly with the Risk Management Systen and/Or
         Stakeholder Management System`,
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       },
       {
-        name:'Identify areas of improvement and develop action plans to address issues.',
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        name: 'Identify areas of improvement and develop action plans to address issues.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       },
       {
-        name:'Effectively monitor program health indicators',
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        name: 'Effectively monitor program health indicators',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       },
       {
-        name:'Integrates with ERPs including Ellucian Banner',
-        description:'',
-        icon:'',
-        route:'',
-        type:''
+        name: 'Integrates with ERPs including Ellucian Banner',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
       }
     ];
   }
 
   updateHeader(evt) {
     this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
-    if(this.currPos >= this.changePos ) {
-        this.isScrolled = true;
+    if (this.currPos >= this.changePos) {
+      this.isScrolled = true;
     } else {
-        this.isScrolled = false;
+      this.isScrolled = false;
     }
-}
+  }
 
   ngOnInit() {
   }

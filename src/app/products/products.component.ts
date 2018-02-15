@@ -15,7 +15,7 @@ export class ProductsComponent implements OnInit {
 
       this.products = [
         {
-          name:'Strategic Planning',
+          name:'Strategic Plan',
           description:'',
           icon:'fa-linode',
           route:''

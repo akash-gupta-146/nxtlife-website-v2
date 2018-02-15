@@ -53,27 +53,6 @@ export class StrategicPlanningComponent implements OnInit {
 
       this.listData = [
         {
-          name:'Cloud based solution designed particularly for higher education',
-          description:'',
-          icon:'',
-          route:'',
-          type:'feature'
-        },
-        {
-          name:'Integrates with Ellucian Banner and other ERP systems',
-          description:'',
-          icon:'',
-          route:'',
-          type:'benefit'
-        },
-        {
-          name:'Allows for multiple plans for same institution',
-          description:'',
-          icon:'',
-          route:'',
-          type:'feature'
-        },
-        {
           name:'Monitor KPIs and targets',
           description:'',
           icon:'',
@@ -88,25 +67,18 @@ export class StrategicPlanningComponent implements OnInit {
           type:'feature'
         },
         {
-          name:'Quarterly planning reports',
+          name:'Develop action plans at KPI level, department and organization level to address issues highlighted through KPI monitoring',
           description:'',
           icon:'',
           route:'',
-          type:'benefit'
+          type:'feature'
         },
         {
           name:'Built in approval process',
           description:'',
           icon:'',
           route:'',
-          type:'benefit'
-        },
-        {
-          name:'Built in forms to collect key data in case such a system is not available at the HEI (MOUs, student exchanges, complains etc.)',
-          description:'',
-          icon:'',
-          route:'',
-          type:'benefit'
+          type:'feature'
         },
         {
           name:'Print well formatted quarterly or annual reports with a click',
@@ -116,14 +88,22 @@ export class StrategicPlanningComponent implements OnInit {
           type:'feature'
         },
         {
-          name:'Develop action plans at KPI level, department and organization level to address issues highlighted through KPI monitoring',
+          name:`Integrates with,
+          Ellucian Banner and other ERP systems Internal Audit and Risk Management System Budget Plan`,
           description:'',
           icon:'',
           route:'',
           type:'benefit'
         },
         {
-          name:'Integrates with Internal Audit and Risk Management system',
+          name:'Allows for multiple plans for same institution',
+          description:'',
+          icon:'',
+          route:'',
+          type:'benefit'
+        },
+        {
+          name:'Allows for multiple campuses',
           description:'',
           icon:'',
           route:'',
