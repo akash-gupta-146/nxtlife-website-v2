@@ -42,8 +42,8 @@ div[dark]{
 }
 .carousel-item div[nxtLife-slide] h2{
     position: absolute;
-    top:10vw;
-    left: 5vw;
+    top: 21vw;
+    left: 9vw;
     font-size: 3vw;
     animation-name:slideInLeft;
     animation-duration: 1.5s;
