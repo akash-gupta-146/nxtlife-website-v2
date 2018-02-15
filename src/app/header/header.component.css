@@ -9,6 +9,7 @@
     left: 0;
     z-index: 10;
     padding: 10px 7vw;
+    background: #00000045;
 }
 /* .navbar-brand span[blue]{
     color: var(--main-one) ;

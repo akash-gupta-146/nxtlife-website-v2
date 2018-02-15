@@ -1,0 +1,82 @@
+.main-title{
+    background:#343b4c;
+   padding:100px 100px 0 100px;
+    position: relative;
+    /* height:100px; */
+}
+.main-title h2{
+    color:white;
+    color: #06ca75;
+    line-height: 45px;
+}
+.main-title  p{
+    color:white;
+}
+.main-title img{
+    height: 250px;
+    display: block;
+    margin:auto;
+}
+/* .main-title .image-overlay{
+    background-image: url(http://wphash.com/wp/seoexp/wp-content/uploads/2017/02/slider-1-bg.jpg);
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    opacity: 1;
+} */
+.objectives{
+    padding:50px 10px;
+}
+.objectives .title{
+    text-align: center;
+    width:100%;
+}
+.objectives .title h3{
+    color: #343b4b;
+}
+.objectives .title p{
+    color:gray;
+}
+.objective-flex{
+    display: flex;
+    justify-content: center;
+}
+.objective-flex .box{
+    width:250px;
+    padding:70px 30px 30px 30px;
+    position: relative;
+    color:white;
+    background:#06ca75 !important;
+    text-align: center;
+    margin:50px 10px;
+}
+.box .icon-block{
+    border-radius:50%;
+    border:2px solid white;
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    top:-50px;
+    text-align: center;
+    font-size: 15px;
+    font-size: 45px;
+    line-height: 90px;
+    background:#06ca75 !important;
+    
+}
+
+
+.ex-drive{
+    background:#06ca75 ;
+    padding:20px
+}
+.ex-drive img{
+    height: 25vw;
+}
+.ex-drive .text h2,.ex-drive .text p{
+    color:white;
+}

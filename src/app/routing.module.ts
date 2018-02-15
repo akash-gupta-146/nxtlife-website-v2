@@ -6,13 +6,15 @@ import { StrategicPlanningComponent } from './strategic-planning/strategic-plann
 import { HomeComponent } from './home/home.component';
 import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
 import { LemComponent } from './lem/lem.component';
+import { SemComponent } from './sem/sem.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'home', pathMatch:'full' },
   { path:'home', component:HomeComponent  },
   { path:'sp', component: StrategicPlanningComponent },
   { path:'qa', component: QualityAssuranceComponent },
-  { path:'lem', component: LemComponent}
+  { path:'lem', component: LemComponent},
+  { path:'sem', component: SemComponent}
 ]
 
 @NgModule({

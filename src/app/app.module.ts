@@ -21,6 +21,8 @@ import { DualListComponent } from './dual-list/dual-list.component';
 import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
 import { FabTitle } from './fab-title/fab-title.component';
 import { LemComponent } from './lem/lem.component';
+import { FooterComponent } from './footer/footer.component';
+import { SemComponent } from './sem/sem.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { LemComponent } from './lem/lem.component';
     DualListComponent,
     QualityAssuranceComponent,
     FabTitle,
-    LemComponent
+    LemComponent,
+    FooterComponent,
+    SemComponent
   ],
   imports: [
     BrowserModule,

@@ -10,8 +10,8 @@ export class NxtlifeServicesComponent implements OnInit {
   heading : Block;
   
     constructor() {
-      this.heading = { title: 'Services', paragraph: `There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.There
-      are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus`}     }
+      this.heading = { title: 'Services', 
+      paragraph: ``}     }
   ngOnInit() {
   }
 

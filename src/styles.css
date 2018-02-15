@@ -576,3 +576,10 @@ div[parallelx2]{
 }
 
 /* end of parallelx scroll */
+
+
+/* about */
+.about-head h2{
+  color:white !important;
+}
+/* end of about page */
