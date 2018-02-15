@@ -1,4 +1,4 @@
-<div id="nxtlifeCarousel" class="carousel slide" data-ride="carousel">
+<!-- <div id="nxtlifeCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
 
       <div class="carousel-item active">
@@ -23,53 +23,168 @@
         </div>        
 
   </div>
-</div>
+</div> -->
+<div class="mt-50"></div>
+<div [ngClass]="{'page-scroll-header': isScrolled}">
+    <div class="fab-title">
+        <div class="dropdown fab-dropDown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Quality Assurance
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" [ngx-scroll-to]="'#description'">Description</a>
+              <a class="dropdown-item" [ngx-scroll-to]="'#product'">Our Product</a>
+              <a class="dropdown-item" [ngx-scroll-to]="'#benefits'">Benefits</a>
+            </div>
+          </div>
+    </div>
+  </div>
 
-
-
-
-
-<fab-title [fabList]="fabList"></fab-title>
-
-
-
-
-
-  <!-- First block -->
-  <app-block-heading [blockData]="heading[0]" id="0"></app-block-heading>
-  <app-left-image [paraData]="paraData[0]"></app-left-image>
-<!-- end of first block -->
-  <!-- fluid section/parallelex -->
-  <div class="parallelex-block">
-    <div parallelex-background class="parallel-image1">
-      <div parallelex-content>
-        <div class="quote">
-                “Strategy is thinking about a choice and choosing to stick with your thinking”                
-          <div writer>
-                —Henry Mintzberg
-        </div>
+<!-- Section 1 -->
+<div class="container top" id="description">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12">
+      <img src="assets/images/girl-boy.png">
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <div class="text-part">
+        <h1>Quality Assurance</h1>
+        <div class="details">
+          Over last two decades while QA approaches in higher education has gone through remarkable evolution.
+          <br>many higher education institutions still have primitive approach to quality and/or have a non-systematic QA system
+          or a QA system which is not linked with policy and planning.
         </div>
       </div>
     </div>
-
   </div>
-  <!-- end of fluid section -->
-    <!-- Second block -->
-    <app-block-heading [blockData]="heading[1]" id="1"></app-block-heading>
-    <app-right-image [paraData]="paraData[1]"></app-right-image>
+</div>
+<!-- end of section 1 -->
+
+<!-- Section 2 -->
+<div class="row blocks">
+  <div class="col-lg-4 col-md-4 col-sm-12 box">
+    <div class="text-part">
+      <i class="fa fa-binoculars"></i>
+      <p>
+        After a careful consideration of various Higher Education Quality Assurance models from around the world, we developed an
+        integrated model for QA, Risk and planning.
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 box">
+    <div class="text-part">
+      <i class="fa fa-binoculars"></i>
+      <p>
+        Our software solution for QA is based on that model and is revolutionary as it does not only integrates ideas from higher
+        education research but also weaves in key elements of higher education which have strong influence on quality of
+        teaching and learning environment, processes and intended outcomes.
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 box">
+    <div class="text-part">
+      <i class="fa fa-binoculars"></i>
+      <p>
+        The model keep learners at its centre and emphasizes responsibility and accountability of staff and faculty towards students
+        who are the key customers.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- end of section 2 -->
+
+<!-- Section 3 -->
+<div class="container block3"  id="product">
+  <h3>Product Description</h3>
+
+  <div class="row">
+    <div class="col-lg-8 col-sm-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="block">
+            <div class="icon">
+                <i class="fa fa-binoculars"></i>
+            </div>
+            <div class="text">
+                There is a dearth of software solutions when it comes to the QA in higher education
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="block">
+                <div class="icon">
+                    <i class="fa fa-binoculars"></i>
+                </div>
+                <div class="text">
+                    Even the ones that are available in the focus mostly on program quality assurance.
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="block">
+                <div class="icon">
+                    <i class="fa fa-binoculars"></i>
+                </div>
+                <div class="text">
+                    Our solution is unique as it focuses on both the programs and services quality.
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="block">
+                <div class="icon">
+                    <i class="fa fa-binoculars"></i>
+                </div>
+                <div class="text">
+                    It satisfies the requirements of almost all accrediting and QA agencies.
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12 image-section">
+      <img src="https://vignette.wikia.nocookie.net/camphalfbloodroleplay/images/5/5a/Checkmark.png/revision/latest?cb=20120103192321" width="100%">
+    </div>
+  </div>
+</div>
+<!-- section 3 -->
+
+
+
+
+<!-- First block -->
+<!-- <app-block-heading [blockData]="heading[0]" id="0"></app-block-heading>
+  <app-left-image [paraData]="paraData[0]"></app-left-image> -->
+
+<!-- Second block -->
+<!-- <app-block-heading [blockData]="heading[1]" id="1"></app-block-heading>
+<app-right-image [paraData]="paraData[1]"></app-right-image> -->
 <!-- end of second block -->
 
-  <!-- Fluid section -->
-  <div class="parallelex-block">
-    <div parallelex-background class="parallel-image1">
-      <div parallelex-content>
-        <app-screenshots></app-screenshots>
-      </div>
+<!-- Fluid section -->
+<!-- <div class="parallelex-block">
+  <div parallelex-background class="parallel-image1">
+    <div parallelex-content>
+      <app-screenshots></app-screenshots>
     </div>
   </div>
-  <!-- end of fluid section -->
+</div> -->
+<!-- end of fluid section -->
 
-  <!-- Third block -->
-  <app-block-heading [blockData]="heading[2]" id="2"></app-block-heading>
-  <app-dual-list [listData]="listData"></app-dual-list>
-  <!-- End of Third block -->
+<!-- section 4 -->
+<div class="section-benefits" id="benefits">
+    <h3>Benefits</h3>
+    <div class="row benefits-block">
+      <div class="flex-blocks" *ngFor="let benefit of listData">
+        <div class="text">
+          {{ benefit.name }}
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- end of section 4 -->
+<!-- Third block -->
+<!-- <app-block-heading [blockData]="heading[2]" id="2"></app-block-heading>
+<app-dual-list [listData]="listData"></app-dual-list> -->
+<!-- End of Third block -->

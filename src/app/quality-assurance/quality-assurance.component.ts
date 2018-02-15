@@ -7,25 +7,23 @@ import { FabList } from '../fab-title/fab-title.component';
 @Component({
   selector: 'app-quality-assurance',
   templateUrl: './quality-assurance.component.html',
-  styleUrls: ['./quality-assurance.component.css']
+  styleUrls: ['./quality-assurance.component.css'],
+  host: {
+    '(window:scroll)': 'updateHeader($event)'
+}
 })
 export class QualityAssuranceComponent implements OnInit {
+
+  isScrolled = false;
+  currPos: Number = 0;
+  startPos: Number = 0;
+  changePos: Number = 140;
 
   heading : Block[];
   paraData: ParaImage[];
   listData: ListData[];
   fabList: FabList;
   constructor() { 
-
-
-
-
-
-
-
-
-
-
 
     this.fabList =
       {
@@ -36,21 +34,6 @@ export class QualityAssuranceComponent implements OnInit {
           'Benefits'
         ]
       };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     this.heading = [
       { 
@@ -142,6 +125,15 @@ export class QualityAssuranceComponent implements OnInit {
       }
     ];
   }
+
+  updateHeader(evt) {
+    this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
+    if(this.currPos >= this.changePos ) {
+        this.isScrolled = true;
+    } else {
+        this.isScrolled = false;
+    }
+}
 
   ngOnInit() {
   }

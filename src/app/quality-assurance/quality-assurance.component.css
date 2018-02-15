@@ -1,1 +1,145 @@
-@import '../carousel/carousel.component.css';
+@import '../fab-title/fab-title.component.css';
+/* Header */
+.page-scroll-header{
+    transition: 1s;
+}
+.fab-title{
+    opacity: 0;
+    transition: 1s;
+}
+.page-scroll-header .fab-title{
+    opacity: 1;
+}
+
+.product-title{
+    opacity: 1;
+    font-size: 3vw;
+    position: fixed;
+    top: 40px;
+    left: 10vw;
+    z-index: 999;
+    color: #aa884f;
+    transition: 1s;
+    border-bottom:3px solid white;
+}
+.page-scroll-header .product-title{
+    opacity: 0;
+}
+/* end of header */
+.mt-50{
+    margin-top:50px;
+}
+.top img{
+    width:100%;
+    display:block;
+    margin:auto;
+}
+.top .text-part{
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.top h1{
+    color:#01ae21;
+}
+.top .details{
+    margin-top:50px;
+    color:darkslategray;
+}
+
+/* second block */
+.blocks .box{
+    padding:20px;
+    text-align:center;
+    position:relative;
+}
+.blocks .text-part{
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.blocks .text-part i{
+    font-size:3vw;
+}
+.blocks .box:nth-child(odd){
+    background:#333982;
+    color:white;
+}
+.blocks .box:nth-child(even){
+    background:#f2f2f2;
+}
+.blocks .box:nth-child(even) i{
+    color:#01ae21;
+}
+/* end of second block */
+
+/* block 3 */
+.block3 h3{
+    color:#01ae21;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+.block3 .block{
+    display:flex;
+    margin-bottom:25px;
+}
+.block3 .block .icon{
+    padding: 17px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px !important;
+    text-align: center;
+    color: #01ae21;
+    font-size: 25px;
+    line-height: 10px;
+}
+.block3 .block .text{
+    padding-left:10px;
+}
+.block3 .image-section{
+ 
+}
+.block3 .image-section img{
+    height: 60%;
+    width: auto;
+    display: block;
+    margin:auto;
+}
+/* end of block 3 */
+
+/* section 4 */
+.section-benefits{
+    background:#f2f2f2;
+    padding:50px 0;
+}
+.section-benefits h3{
+    color:#01ae21;
+    text-align: center;
+}
+.benefits-block{
+    display: flex;
+    justify-content: center;
+}
+.benefits-block .flex-blocks{
+    width:300px;
+    height:400px;
+    margin:10px;
+    padding:10px;
+    box-shadow: 0 0 22px #00000080;
+    text-align: center;
+    font-size: 20px;
+}
+.benefits-block .flex-blocks:nth-child(even){
+    background:#333982;
+    color:#f2f2f2;
+}
+.benefits-block .flex-blocks:nth-child(odd){
+    background:#f2f2f2;
+}
+.benefits-block .text{
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+/* end of section 4 */

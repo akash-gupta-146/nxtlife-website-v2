@@ -22,9 +22,7 @@ a:focus{
   box-shadow:none !important;
 }
 /* end of bootstrap default */
-body{
-    background:#fff2f2;
-}
+
 /* preloader */
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
