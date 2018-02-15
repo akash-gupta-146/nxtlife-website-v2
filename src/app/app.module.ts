@@ -19,6 +19,7 @@ import { LeftImageComponent } from './left-image/left-image.component';
 import { RightImageComponent } from './right-image/right-image.component';
 import { DualListComponent } from './dual-list/dual-list.component';
 import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
+import { FabTitle } from './fab-title/fab-title.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { QualityAssuranceComponent } from './quality-assurance/quality-assurance
     LeftImageComponent,
     RightImageComponent,
     DualListComponent,
-    QualityAssuranceComponent
+    QualityAssuranceComponent,
+    FabTitle
   ],
   imports: [
     BrowserModule,

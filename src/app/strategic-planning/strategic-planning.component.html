@@ -1,4 +1,5 @@
-<div id="nxtlifeCarousel" class="carousel slide" data-ride="carousel">
+
+<!-- <div id="nxtlifeCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div cover>
@@ -15,14 +16,69 @@
       </div>
     </div>
   </div>
+</div> -->
+<!-- <div class="mt-150"></div> -->
+<!-- <div  class="title-image text-center">
+  <div text>
+      <div class="title">
+          Strategic Planning
+        </div>
+        <div class="subTitle">
+          "Links Today With Tomorrow"
+        </div>
+  </div>
+ 
+</div> -->
+<div [ngClass]="{'page-scroll-header': isScrolled}">
+  <div class="product-title">
+    Strategic Planning
+  </div>
+  <div class="fab-title">
+      <div class="dropdown fab-dropDown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Strategic Planning
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" [ngx-scroll-to]="'#why'">Why Strategic Planning</a>
+            <a class="dropdown-item" [ngx-scroll-to]="'#solution'">Our product</a>
+            <a class="dropdown-item" [ngx-scroll-to]="'#benefits'">Benefits</a>
+          </div>
+        </div>
+  </div>
 </div>
+
   <!-- First block -->
-      <app-block-heading [blockData]="heading[0]"></app-block-heading>
-      <app-left-image [paraData]="paraData[0]"></app-left-image>
+      <!-- <app-block-heading [blockData]="heading[0]"></app-block-heading> -->
+      <!-- <app-left-image [paraData]="paraData[0]"></app-left-image> -->
   <!-- end of first block -->
 
+  <!-- First block -->
+  <!-- <app-block-heading [blockData]="heading[0]"></app-block-heading>
+  <div class="container flex-items-3">
+      <div class="d-flex justify-content-between">
+        <div class="flex-item">
+          <div flex-item-text>
+              
+          </div>
+        </div>
+        <div class="flex-item">
+            <div flex-item-text>
+            
+            </div>
+          </div>
+        <div class="flex-item">
+            <div flex-item-text>
+            Strategic planning has to be a disciplined effort that is monitored regularly to ensure all stakeholders are working towards common goals to achieve intended outcomes.
+            </div>
+          </div>
+      </div>
+  </div> -->
+
+
+  <!-- End of first block -->
+
   <!-- fluid section/parallelex -->
-  <div class="parallelex-block">
+  <!-- <div class="parallelex-block">
     <div parallelex-background class="parallel-image1">
       <div parallelex-content>
         <div class="quote">
@@ -34,27 +90,133 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
   <!-- end of fluid section -->
 
+
+
   <!-- Second block -->
-      <app-block-heading [blockData]="heading[1]"></app-block-heading>
-      <app-right-image [paraData]="paraData[1]"></app-right-image>
+  <div class="row two-col-block" id="why">
+      
+      <div class="col-sm-12 col-lg-6 col-md-6 text-block">
+        <div class="v-center">
+          <div title>
+              <h3>Why Strategic Planning</h3>
+            </div>
+        <ul>
+          <li>
+              Bridge that links an organization’s today with tomorrow
+          </li>
+          <li>
+              Properly developed, implemented and monitored plan keeps an organization focused on its priorities
+          </li>
+          <li>
+              Ensures all resources are spent in line with the Goals and Objectives
+          </li>
+          <li>
+              Disciplined effort that is monitored regularly to ensure all stakeholders are working towards common goals to achieve intended outcomes
+          </li>    
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-6 col-md-6 image-block image1"></div>
+    </div>
+  <div class="row two-col-block" id="solution">
+      <div class="col-sm-12 col-lg-6 col-md-6 image-block image2"></div>
+    <div class="col-sm-12 col-lg-6 col-md-6 text-block">
+      <div class="v-center">
+        <div title>
+            <h3>Our Solution</h3>
+          </div>
+      <ul>
+        <li>
+            Developed in consultation with senior higher education administrators <br>(15-20 years of experience)
+        </li>
+        <li>
+            Cost effective solution for higher education institutions with budget of any size
+        </li>  
+        <li>
+            There are many solutions available in the market, which can be used for planning,<br> but most of them mostly cater the industry or are too expensive to be affordable for higher education institutions with small budgets.
+        </li>  
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  
+      <div class="row two-col-block" id="features">
+        <div class="col-sm-12 col-lg-6 col-md-6 text-block">
+          <div class="v-center">
+            <div title>
+                <h3>Features</h3>
+              </div>
+          <ul>
+            <div *ngFor="let feature of listData">
+              <li *ngIf="feature.type=='feature'">
+                  {{ feature.name }}
+              </li>
+          </div>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6 col-md-6 image-block image3"></div>
+      </div>
+ 
+      <div class="row two-col-block" id="benefits">
+          <div class="col-sm-12 col-lg-6 col-md-6 image-block image4"></div>
+          <div class="col-sm-12 col-lg-6 col-md-6 text-block">
+            <div class="v-center">
+              <div title>
+                  <h3>Benefits</h3>
+                </div>
+            <ul>
+              <div *ngFor="let benefit of listData">
+                <li *ngIf="benefit.type=='benefit'">
+                    {{ benefit.name }}
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        </div>
+  
+
+      <!-- <app-block-heading [blockData]="heading[1]"></app-block-heading>
+      <app-right-image [paraData]="paraData[1]"></app-right-image> -->
   <!-- end of second block -->
 
+  <!-- Third block -->
+  <!-- <div class="flex-cards">
+    <h3><span>Benefits</span></h3>
+    <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-12 nxt-card" *ngFor="let benefit of listData">
+        <div class="v-center flex-text">
+            {{ benefit.name }}
+          </div>
+    </div>
+  </div>
+  </div> -->
+  <!-- <div class="">
+    <div class="nxt-card"  >
+      <div class="v-center flex-text">
+        {{ benefit.name }}
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <app-block-heading [blockData]="heading[2]"></app-block-heading>
+  <app-dual-list [listData]="listData"></app-dual-list> -->
+  <!-- End of Third block -->
 
   <!-- Fluid section -->
-  <div class="parallelex-block">
+  <!-- <div class="parallelex-block">
     <div parallelex-background class="parallel-image1">
       <div parallelex-content>
         <app-screenshots></app-screenshots>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- end of fluid section -->
 
-  <!-- Third block -->
-  <app-block-heading [blockData]="heading[2]"></app-block-heading>
-  <app-dual-list [listData]="listData"></app-dual-list>
-  <!-- End of Third block -->
+
   

@@ -1,3 +1,17 @@
+/*header*/
+
+@keyframes slideUp{
+  from{
+      opacity:0;
+      transform:translatey(100px);
+  }
+  to{
+      opacity:1;
+      transform:translatey(0px);
+  }
+}
+/*end of header*/
+
 /* You can add global styles to this file, and also import other style files */
 :root{
     --main-one:#1f85c3;

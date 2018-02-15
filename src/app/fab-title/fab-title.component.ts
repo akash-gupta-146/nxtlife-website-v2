@@ -1,22 +1,26 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  selector: 'fab-title',
+  templateUrl: './fab-title.component.html',
+  styleUrls: ['./fab-title.component.css'],
   host: {
     '(window:scroll)': 'updateHeader($event)'
 }
 })
+export class FabTitle implements OnInit {
 
-export class HeaderComponent{
+  @Input() fabList: FabList;
 
   isScrolled = false;
   currPos: Number = 0;
   startPos: Number = 0;
-  changePos: Number = 140;
+  changePos: Number = 100;
 
-  constructor() { }
+  constructor() {}
+
+  ngOnInit() {
+  }
 
   updateHeader(evt) {
     this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
@@ -27,4 +31,9 @@ export class HeaderComponent{
     }
 }
 
+}
+
+export class FabList{
+  title:string;
+  options: string[];
 }

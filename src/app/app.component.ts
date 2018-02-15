@@ -1,4 +1,5 @@
 import { Component,} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,12 @@ export class AppComponent {
   title = 'app';
 
 
-  constructor(){}
+  constructor(private router:ActivatedRoute){
+
+    this.router.params.subscribe((val)=>{
+      console.log(val)
+    })
+  }
 
 
 }

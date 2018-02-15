@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Block } from '../block-heading/block-heading.component';
 import { ParaImage } from '../left-image/left-image.component';
 import { ListData } from '../dual-list/dual-list.component';
+import { FabList } from '../fab-title/fab-title.component';
 
 @Component({
   selector: 'app-quality-assurance',
@@ -13,8 +14,44 @@ export class QualityAssuranceComponent implements OnInit {
   heading : Block[];
   paraData: ParaImage[];
   listData: ListData[];
-  
+  fabList: FabList;
   constructor() { 
+
+
+
+
+
+
+
+
+
+
+
+    this.fabList =
+      {
+        title: 'Quality Assurance',
+        options: [
+          'Quality Assurance in higher education',
+          'Product Description',
+          'Benefits'
+        ]
+      };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     this.heading = [
       { 
         title: 'Quality Assurance in higher education', 
@@ -50,52 +87,60 @@ export class QualityAssuranceComponent implements OnInit {
         name:'Time-resource effective solution that links planning, risk and QA.',
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       },
       {
         name:'Manage, organize and track all your QA activities in a central places',
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       },
       {
         name:'Flexible enough to handle multiple campuses hierarchy',
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       },
       {
         name:'Easily access for entire QA team – either hosted on cloud or your own servers.',
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       },
       {
         name:`Run surveys and polls and link data directly with the Risk Management Systen and/Or
         Stakeholder Management System`,
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       },
       {
         name:'Identify areas of improvement and develop action plans to address issues.',
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       },
       {
         name:'Effectively monitor program health indicators',
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       },
       {
         name:'Integrates with ERPs including Ellucian Banner',
         description:'',
         icon:'',
-        route:''
+        route:'',
+        type:''
       }
-    ]
+    ];
   }
 
   ngOnInit() {

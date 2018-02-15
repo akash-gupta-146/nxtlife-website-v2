@@ -21,4 +21,5 @@ export class ListData{
   description:string;
   icon:string;
   route:string;
+  type:string;
 }

@@ -1,0 +1,8 @@
+<div class="dropdown fab-dropDown">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{ fabList.title }}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" *ngFor="let list of fabList.options; let i=index" [ngx-scroll-to]="'#'+index">{{ list }}</a>
+    </div>
+  </div>

@@ -10,46 +10,45 @@ export class ProductsComponent implements OnInit {
   heading : Block;
   products: Product[];
     constructor() {
-      this.heading = { title: 'Products', paragraph: `There are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus.There
-      are many variations of lorem of Lorem Ipsum available for use a sit amet, consectetur debits adipisicing lacus`
+      this.heading = { title: 'Products', paragraph: ``
       }
 
       this.products = [
         {
           name:'Strategic Planning',
-          description:'Links Today With Tomorrow',
-          icon:'',
+          description:'',
+          icon:'fa-linode',
           route:''
         },
         {
           name:"Stakeholders' Experience Management",
-          description:"Design and Manage Stakeholder' Journey" ,
-          icon:'',
+          description:"" ,
+          icon:'fa-handshake-o',
           route:''
         },
 
         {
-          name:'Rish Management & Internal Audidt',
-          description:'consectetur adipiscing elit. Etiam posuere urna in suscipit tempor',
-          icon:'',
+          name:'Risk Management & Internal Audit',
+          description:'',
+          icon:'fa-sticky-note-o',
           route:''
         },
         {
           name:'Quality Assurance & Accreditation',
-          description:'consectetur adipiscing elit. Etiam posuere urna in suscipit tempor',
-          icon:'',
+          description:'',
+          icon:'fa-check-square-o',
           route:'qa'
         },
         {
-          name:'Learning Experience & Management',
-          description:'consectetur adipiscing elit. Etiam posuere urna in suscipit tempor',
-          icon:'',
+          name:'Learning Experience Management',
+          description:'',
+          icon:'fa-area-chart',
           route:''
         },
         {
           name:'International University Ranking',
-          description:'consectetur adipiscing elit. Etiam posuere urna in suscipit tempor',
-          icon:'',
+          description:'',
+          icon:'fa-university',
           route:''
         },        
       ]

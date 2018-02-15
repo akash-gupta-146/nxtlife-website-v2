@@ -1,15 +1,5 @@
 <div id="nxtlifeCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-      <!-- <div class="carousel-item active">
-              <div nxtLife-slide>
-                <h2>NxtLife Technologies</h2>
-                <span>""</span>
-              </div>
-              <div overlay>
-              <img class="d-block w-100" src="assets/images/carousel/0.png" alt="First slide"/>
-               <img src="assets/images/nxtlife-logo.svg" class="nxtlife-logo1">
-            </div>
-            </div> -->
 
       <div class="carousel-item active">
         <div bird>
@@ -35,8 +25,18 @@
   </div>
 </div>
 
+
+
+
+
+<fab-title [fabList]="fabList"></fab-title>
+
+
+
+
+
   <!-- First block -->
-  <app-block-heading [blockData]="heading[0]"></app-block-heading>
+  <app-block-heading [blockData]="heading[0]" id="0"></app-block-heading>
   <app-left-image [paraData]="paraData[0]"></app-left-image>
 <!-- end of first block -->
   <!-- fluid section/parallelex -->
@@ -55,7 +55,7 @@
   </div>
   <!-- end of fluid section -->
     <!-- Second block -->
-    <app-block-heading [blockData]="heading[1]"></app-block-heading>
+    <app-block-heading [blockData]="heading[1]" id="1"></app-block-heading>
     <app-right-image [paraData]="paraData[1]"></app-right-image>
 <!-- end of second block -->
 
@@ -70,6 +70,6 @@
   <!-- end of fluid section -->
 
   <!-- Third block -->
-  <app-block-heading [blockData]="heading[2]"></app-block-heading>
+  <app-block-heading [blockData]="heading[2]" id="2"></app-block-heading>
   <app-dual-list [listData]="listData"></app-dual-list>
   <!-- End of Third block -->

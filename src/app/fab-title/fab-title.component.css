@@ -1,0 +1,29 @@
+.fab-dropDown{
+    position: fixed;
+    top: 45px;
+    left: 0;
+    z-index: 10;
+}
+
+.fab-dropDown button{
+    border-radius: 0px;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.82);
+    border: 2px solid white;
+    color:white;
+    border: 0px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.45098);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.fab-dropDown .dropdown-menu{
+    border-radius: 0px;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.82);
+}
+.fab-dropDown .dropdown-menu a{
+    color:white;
+}
+.fab-dropDown .dropdown-menu a:hover{
+    background:rgba(1, 1, 1, 0.47843137254901963);
+}

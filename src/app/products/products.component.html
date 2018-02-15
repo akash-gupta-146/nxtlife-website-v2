@@ -4,11 +4,11 @@
     <div class="col-lg-6 col-sm-12"  *ngFor="let product of products">
       <div li class="animation fadeInRight">
         <div bullet>
-          <i class="fa fa-check-square-o"></i>
+          <i class="fa" [ngClass]="product.icon"></i>
         </div>
         <div text>
           <h5>{{ product.name }}</h5>
-          <p>{{ product.description }}</p>
+          <!-- <p>{{ product.description }}</p> -->
         </div>
       </div>
     </div>

@@ -2,20 +2,32 @@ import { Component, OnInit } from '@angular/core';
 import { Block } from '../block-heading/block-heading.component';
 import { ParaImage } from '../left-image/left-image.component';
 import { ListData } from '../dual-list/dual-list.component';
+import { FabList } from '../fab-title/fab-title.component';
 
 @Component({
   selector: 'app-strategic-planning',
   templateUrl: './strategic-planning.component.html',
-  styleUrls: ['./strategic-planning.component.css']
+  styleUrls: ['./strategic-planning.component.css'],
+  host: {
+    '(window:scroll)': 'updateHeader($event)'
+}
 })
 export class StrategicPlanningComponent implements OnInit {
+
+  isScrolled = false;
+  currPos: Number = 0;
+  startPos: Number = 0;
+  changePos: Number = 100;
+
   heading : Block[];
   paraData: ParaImage[];
   listData: ListData[];
+  fabList: FabList;
     constructor() {
+
       this.heading = [
         { 
-          title: 'Strategic Planning in higher education', 
+          title: 'Why Strategic Planning', 
           paragraph: ''
         },
         { 
@@ -44,72 +56,101 @@ export class StrategicPlanningComponent implements OnInit {
           name:'Cloud based solution designed particularly for higher education',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'feature'
         },
         {
           name:'Integrates with Ellucian Banner and other ERP systems',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'benefit'
         },
         {
           name:'Allows for multiple plans for same institution',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'feature'
         },
         {
           name:'Monitor KPIs and targets',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'feature'
         },
         {
           name:'Upload evidence',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'feature'
         },
         {
           name:'Quarterly planning reports',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'benefit'
         },
         {
           name:'Built in approval process',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'benefit'
         },
         {
           name:'Built in forms to collect key data in case such a system is not available at the HEI (MOUs, student exchanges, complains etc.)',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'benefit'
         },
         {
           name:'Print well formatted quarterly or annual reports with a click',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'feature'
         },
         {
           name:'Develop action plans at KPI level, department and organization level to address issues highlighted through KPI monitoring',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'benefit'
         },
         {
           name:'Integrates with Internal Audit and Risk Management system',
           description:'',
           icon:'',
-          route:''
+          route:'',
+          type:'benefit'
         }
-      ]
+      ];
+      this.fabList =
+      {
+        title: 'Strategic Planning',
+        options: [
+          'Quality Assurance in higher education',
+          'Product Description',
+          'Benefits'
+        ]
+      };
 
 
      }
+
+     updateHeader(evt) {
+      this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
+      if(this.currPos >= this.changePos ) {
+          this.isScrolled = true;
+      } else {
+          this.isScrolled = false;
+      }
+  }
   ngOnInit() {
   }
 

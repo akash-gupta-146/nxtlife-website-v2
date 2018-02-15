@@ -1,3 +1,4 @@
+@import '../fab-title/fab-title.component.css';
 div[image] img{
     width:100%;
 }
@@ -11,6 +12,148 @@ div[text] div[para]{
     justify-self: center;
 }
 
+.mt-150{
+    margin-top:150px;
+}
+/* Header */
+/* .sp .page-scroll-header{
+    background:pink !important;
+}
+.page-scroll-header {
+    transition: 1s;
+    background-color: #0000009e !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.582);
+}
+.page-scroll-header{
+    padding:0px!important;
+}
+.page-scroll-header div[text]{
+    display:none;
+} */
+.page-scroll-header{
+    transition: 1s;
+}
+.fab-title{
+    opacity: 0;
+    transition: 1s;
+}
+.page-scroll-header .fab-title{
+    opacity: 1;
+}
+
+.product-title{
+    opacity: 1;
+    font-size: 3vw;
+    position: fixed;
+    top: 40px;
+    left: 10vw;
+    z-index: 999;
+    color: #aa884f;
+    transition: 1s;
+    border-bottom:3px solid white;
+}
+.page-scroll-header .product-title{
+    opacity: 0;
+}
+/* end of header */
+
+/* Top header */
+.title-image{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    padding: 60px 0px 0px 0;
+    background:#1c222f;
+}
+.image1{
+    background:url("http://aqinsights.com/wp-content/uploads/2018/02/DevelopmentElements-Recovered-15.jpg")
+}
+.image2{
+    background:url("http://www.aqinsights.com/wp-content/uploads/2018/02/Brand-Tracker_updated.jpg");
+}
+.image3{
+    background:url('../../assets/images/carousel/sp/features.jpg');
+}
+.image4{
+    background:url(http://3.bp.blogspot.com/-xk8VMTcUA-Y/VN1XIHGPizI/AAAAAAAAABA/DVRvo26FAn8/s1600/mba-curso-habilidades-comerciales.jpg);
+}
+div[text]{
+    display: inline-block;
+    padding: 10px 100px;
+    opacity:1;
+    transition:1s;
+}
+.title-image .title{
+    font-size:40px;
+    color:var(--main-one);
+    color:white
+}
+
+.title-image .subTitle{
+    color:white;
+    font-size:15px;
+}
+/* end of top header */
+
+/* Two column block */
+.two-col-block div[title] {
+    margin-bottom:50px;
+}
+.two-col-block div[title] h3{
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 52px;
+    text-align: left;
+}
+.two-col-block div[title]:after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background: #aa874f;
+}
+    .two-col-block .image-block{
+       background-size:cover;
+    }
+    .two-col-block .text-block{
+        padding:50px;
+        background: #1c1c1e;
+        color:white;
+        height:715px;
+    }
+    .v-center{
+        position: relative;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .two-col-block ul{
+        list-style: none;
+        padding-left: 0px;
+    }
+    .two-col-block ul li{
+        margin-bottom:20px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+/* two column block */
+
+
+/* Flex items */
+div[flex-item-text]{
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.flex-items-3 .flex-item{
+    padding:20px;
+    width:30vw;
+    margin:20px;
+    height:300px;
+    font-size: larger;
+    background-color: #aa884f;
+}
+/* end of flex items */
 
 div[records] div[block]{
     text-align: center;
@@ -67,3 +210,31 @@ div[cover]{
 
 
 
+/* flex-cards */
+.flex-cards{
+    background:#212a34;
+    padding:50px 100px;
+    justify-content: center;
+}
+.flex-cards {
+
+}
+.nxt-card{
+    color: #aa884f;
+    border:3px solid #aa884f;
+    text-align: center;
+    font-size:18px;
+    height:300px;
+    background:#1c222f;
+    margin:20px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.14), 0 20px 70px rgba(0,0,0,0.12);
+}
+.flex-cards h3{
+    color:white;
+    text-align: center;
+}
+.flex-cards h3 span{
+    padding:0 20px;
+    border-bottom:3px solid #aa884f;
+}
+/* end of flex-cards */
