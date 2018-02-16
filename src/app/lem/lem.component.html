@@ -1,36 +1,36 @@
 <div class="background">
-        <div class="container">
-                <div class="box">
-                    <div class="box-header">
-                        <img src="../../assets/images/sp_main_bg.png">
-                            <h2>Learning Experience Management</h2>
-                    </div>
-                    <div class="row content">
-                        <div class="col-lg-6 col-sm-12">
-                            <h4>Features</h4>
-                            <div class="area" *ngFor="let feature of features">
-                                    <div class="point">
-                                        <h5>{{ feature.title }}</h5>
-                                        <p>{{ feature.details }}</p>
-                                        <ul *ngFor="let point of feature.subPoints">
-                                            <li>{{ point }}</li>
-                                        </ul>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                                <h4>Benefits</h4>
-                                <div class="area" *ngFor="let benefit of benefits">
-                                        <div class="point">
-                                            <h5>{{ benefit.title }}</h5>
-                                            <p>{{ benefit.details }}</p>
-                                            <ul *ngFor="let point of benefit.subPoints">
-                                                <li>{{ point }}</li>
-                                            </ul>
-                                        </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="box">
+      <div class="box-header">
+        <img src="../../assets/images/sp_main_bg.png">
+        <h2>Learning Experience Management</h2>
+      </div>
+      <div class="row content">
+        <div class="col-lg-6 col-sm-12">
+          <h4>Features</h4>
+          <div class="area" *ngFor="let feature of features">
+            <div class="point">
+              <h5>{{ feature.title }}</h5>
+              <p>{{ feature.details }}</p>
+              <ul *ngFor="let point of feature.subPoints">
+                <li>{{ point }}</li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h4>Benefits</h4>
+          <div class="area" *ngFor="let benefit of benefits">
+            <div class="point">
+              <h5>{{ benefit.title }}</h5>
+              <p>{{ benefit.details }}</p>
+              <ul *ngFor="let point of benefit.subPoints">
+                <li>{{ point }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

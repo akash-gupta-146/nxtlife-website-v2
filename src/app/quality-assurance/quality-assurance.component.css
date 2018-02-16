@@ -76,7 +76,7 @@
 /* block 3 */
 .block3 h3{
     color:#01ae21;
-    margin-top:100px;
+    margin-top:25px;
     margin-bottom:50px;
 }
 .block3 .block{
@@ -98,10 +98,10 @@
     padding-left:10px;
 }
 .block3 .image-section{
- 
+    height: 230px;
 }
 .block3 .image-section img{
-    height: 60%;
+    height: 100%;
     width: auto;
     display: block;
     margin:auto;

@@ -38,10 +38,57 @@
   <div class="col-lg-6 col-sm-12">
     <img src="../../assets/images/preloader.png">
   </div>
-  <div class="col-lg-6 col-sm-12 text">
-      <h2>Experience Drive</h2>
-      <p>
-          Well researched business concept can be applied to enhance higher education stakeholder experience.
-      </p>
+  <div class="col-lg-6 col-sm-12">
+    <div class="text">
+        <h3>Experience Drive</h3>
+        <p>
+            Well researched business concept can be applied to enhance higher education stakeholder experience.
+        </p>
     </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="box">
+        <div class="row content">
+            <div class="col-lg-6 col-sm-12">
+                <h4>What impact can have an Unhappy customer create? </h4>
+                <div class="area" *ngFor="let feature of customer">
+                        <div class="point">
+                            <h5>{{ feature.title }}</h5>
+                            <p>{{ feature.details }}</p>
+                            <ul *ngFor="let point of feature.subPoints">
+                                <li>{{ point }}</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                    <h4>CEM Implementation Framework</h4>
+                    <div class="area" *ngFor="let benefit of framework">
+                            <div class="point">
+                                <h5>{{ benefit.title }}</h5>
+                                <p>{{ benefit.details }}</p>
+                                <ul *ngFor="let point of benefit.subPoints">
+                                    <li>{{ point }}</li>
+                                </ul>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row ">
+  <div class="learning-exp">
+          <h3>
+              Enhance Learning Experience
+          </h3>
+          <div class="flex-box">
+            <div class="bx" *ngFor="let lx of learningExp">
+                {{ lx.title }}
+            </div>
+          </div>
+  </div>
 </div>

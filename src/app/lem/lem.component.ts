@@ -43,7 +43,10 @@ export class LemComponent implements OnInit {
         title:'Academic Advisory',
         details: '',
         subPoints: [
-          ''
+          'Faculty advisor identifies at-risk students',
+          'Rating per module per term',
+          'Faculty teaching the module gets view of all students rating',
+          'Students does not get to see there rating'
         ]
       },
       {
