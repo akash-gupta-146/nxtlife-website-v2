@@ -1,3 +1,64 @@
+
+
+<header>
+    <div class="header__bg"></div>
+    <h1>Learning Experience Management</h1>
+  </header>
+  
+  <div class="features">
+<div class="row">
+  
+    <div class="container">
+        <h2>Features</h2>
+        <div class="features-flex">
+          <div class="flex-box" *ngFor="let feature of features">
+              <div class="point">
+                  <h5>{{ feature.title }}</h5>
+                  <p>{{ feature.details }}</p>
+                  <ul *ngFor="let point of feature.subPoints">
+                    <li>{{ point }}</li>
+                  </ul>
+                </div>
+          </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="benefits">
+  <h2>Benefits</h2>
+      <div class="features-flex">
+          <div class="flex-box-benefits" *ngFor="let feature of benefits">
+              <div class="point">
+                  <h5>{{ feature.title }}</h5>
+                  <p>{{ feature.details }}</p>
+                  <ul *ngFor="let point of feature.subPoints">
+                    <li>{{ point }}</li>
+                  </ul>
+                </div>
+          </div>
+    </div>
+  
+</div>
+
+<div class="row">
+    <div class="learning-exp">
+      <h3>
+        Enhance Learning Experience
+      </h3>
+      <div class="flex-box">
+        <div class="bx" *ngFor="let lx of learningExp">
+          {{ lx.title }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- 
+
 <div class="background">
   <div class="container">
     <div class="box">
@@ -33,4 +94,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

@@ -1,3 +1,112 @@
+
+
+header {
+ position: relative;
+ height: 300px;
+ overflow: hidden;
+}
+
+.header__bg {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-image: linear-gradient(#887af9, #7c6bf8);
+ transform: skewY(-6deg);
+ transform-origin: top left;
+}
+
+h1 {
+ margin: 0;
+ padding: 100px 0;
+ font: 44px "Arial";
+ text-align: center;
+}
+
+header h1 {
+ position: relative;
+ color: white;
+}
+.features h2{
+    color:#7c6bf8;
+    text-align: center;
+}
+
+.features-flex{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.features-flex .flex-box{
+    background:#7c6bf8;
+    border-radius:25px;
+    margin:10px 10px;
+    color:white;
+}
+.flex-box-benefits{
+    background-color:#fff!important;
+    border-radius:25px;
+    margin:10px 10px;
+    color:#7c6bf8;
+}
+.features-flex .point{
+    position: relative;
+    padding: 15px 20px 10px;
+}
+
+.benefits{
+    position: relative;
+    width:100%;
+    background-image:linear-gradient(#7c6bf8,#887af9);
+    z-index: -1;
+    padding:20px 0;
+}
+.benefits h2{
+    color:white;
+    text-align: center;
+}
+.benefits .features-flex{
+    padding:50px 0;
+}
+
+
+.learning-exp{
+    padding:50px
+}
+
+
+.learning-exp h3{
+    color: #7c6bf8;
+    text-align: center;
+}
+
+.learning-exp .flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-box .bx{
+    padding:20px;
+    width:25%;
+    text-align: center;
+   margin:10px;
+}
+.flex-box .bx:nth-child(even){
+    background:#887af9;
+    border-radius: 25px;
+    color:white;
+}
+.flex-box .bx:nth-child(odd){
+    background:#7c6bf8;
+    color:white;
+}
+
+
+/* 
 .background{
     background:#f5f5f5;
     padding:70px;
@@ -62,4 +171,4 @@
     top: 25px;
     left: -29px;
     z-index: 1;
-}
+} */

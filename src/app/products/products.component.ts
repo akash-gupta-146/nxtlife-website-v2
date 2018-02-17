@@ -17,7 +17,7 @@ export class ProductsComponent implements OnInit {
         {
           name:'Strategic Plan',
           description:'',
-          icon:'fa-linode',
+          icon:'fa-code',
           route:''
         },
         {
@@ -30,25 +30,25 @@ export class ProductsComponent implements OnInit {
         {
           name:'Risk Management & Internal Audit',
           description:'',
-          icon:'fa-sticky-note-o',
+          icon:'fa-balance-scale',
           route:''
         },
         {
           name:'Quality Assurance & Accreditation',
           description:'',
-          icon:'fa-check-square-o',
+          icon:'fa-check',
           route:'qa'
         },
         {
           name:'Learning Experience Management',
           description:'',
-          icon:'fa-area-chart',
+          icon:'fa-leanpub',
           route:''
         },
         {
           name:'International University Ranking',
           description:'',
-          icon:'fa-university',
+          icon:'fa-graduation-cap',
           route:''
         },        
       ]

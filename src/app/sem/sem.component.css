@@ -1,4 +1,3 @@
-@import '../lem/lem.component.css';
 
 /* Overriding lem css */
 .box{
@@ -27,10 +26,9 @@
     position: relative;
     /* height:100px; */
 }
-.main-title h2{
+.main-title h1{
     color:white;
     color: #06ca75;
-    line-height: 45px;
 }
 .main-title  p{
     color:white;
@@ -114,33 +112,53 @@
     font-size:1.5vw; 
 }
 
-.learning-exp{
-    background: #26547c;
-    padding:50px
+.unhappy{
+    padding:50px;
 }
+.unhappy h3{
+    color:#06ca75;
+}
+.unhappy img{
+    width: 100%;
+}
+.unhappy div[text]{
+    position: relative;
 
-
-.learning-exp h3{
+    top:50%;
+    transform: translateY(-50%);
+}
+.unhappy ul{
+    padding:0px;
+    list-style: none;
+}
+.unhappy ul li{
+    background: #07cb75;
     color: white;
-    text-align: center;
+    margin:10px;
+    padding:5px;
+}
+.cem{
+    background: #26547c;
+    padding:50px;
+    text-align: right;
+}
+.cem h3{
+    color:white;
+}
+.cem .image{
+    background-image:url('https://cdn.lynda.com/course/361205/361205-636283009390064213-16x9.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cem ul{
+    padding:0px;
+    list-style: none;
 }
 
-.learning-exp .flex-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.flex-box .bx{
-    padding:20px;
-    width:25%;
-    text-align: center;
-   margin:10px;
-}
-.flex-box .bx:nth-child(even){
-    background:white;
-    border-radius: 25px;
-}
-.flex-box .bx:nth-child(odd){
-    background:#06ca75;
-    color:white;
+.cem ul li{
+    background: white;
+    color: #26547c;
+    margin:10px;
+    padding:5px;
 }

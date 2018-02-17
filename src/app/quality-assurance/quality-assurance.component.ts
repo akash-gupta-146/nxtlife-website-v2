@@ -3,6 +3,7 @@ import { Block } from '../block-heading/block-heading.component';
 import { ParaImage } from '../left-image/left-image.component';
 import { ListData } from '../dual-list/dual-list.component';
 import { FabList } from '../fab-title/fab-title.component';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-quality-assurance',
@@ -23,7 +24,8 @@ export class QualityAssuranceComponent implements OnInit {
   paraData: ParaImage[];
   listData: ListData[];
   fabList: FabList;
-  constructor() {
+  constructor(private router: Router) {
+    window.scrollTo(0, 0);
 
     this.fabList =
       {
@@ -136,6 +138,8 @@ export class QualityAssuranceComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
+
+
+}
 
 }

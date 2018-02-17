@@ -10,6 +10,7 @@ export class LemComponent implements OnInit {
 
   features:Features[];
   benefits:Features[];
+  learningExp:Features[];
   constructor() {
     this.features = [
       {
@@ -103,6 +104,54 @@ export class LemComponent implements OnInit {
       {
         title:'Private and Dedicated space between students and college staff',
         details: '',
+        subPoints: []
+      },
+    ];
+
+    this.learningExp = [
+      {
+        title:'Real time unadultered overview of all departments performance',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'Notified before any issue becomes a problem',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'Better prepared in fulfilling accreditation, ministry and audit requirments',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'Make your team more efficient and productive',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'Make your team more efficient and productive',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'Reduce workload',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'Direct communication channel with all stakeholders (students,college staff and management)',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'All the communication gets screened categorised and prioritised',
+        details: null,
+        subPoints: []
+      },
+      {
+        title:'Informed decision making based on real authenticated data',
+        details: null,
         subPoints: []
       },
     ]

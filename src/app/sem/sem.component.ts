@@ -10,7 +10,7 @@ export class SemComponent implements OnInit {
 
   customer:Features[];
   framework:Features[];
-  learningExp:Features[];
+ 
 
   objectives : Objectives[];
   constructor() {
@@ -18,22 +18,22 @@ export class SemComponent implements OnInit {
       {
         title:'',
         details:'Commitment to Excellence',
-        icon:'fa-binoculars'
+        icon:'fa-fighter-jet'
       },
       {
         title:'',
         details:'Uphold the image of a brand that believes in Excellence',
-        icon:'fa-binoculars'
+        icon:'fa-fort-awesome'
       },
       {
         title:'',
         details:`‘Word-of-mouth’ is the best marketing tool. Hence, satisfaction of the ‘customers’ is important`,
-        icon:'fa-binoculars'
+        icon:'fa-assistive-listening-systems'
       },
       {
         title:'',
         details:`Accreditation requirements`,
-        icon:'fa-binoculars'
+        icon:'fa-graduation-cap'
       },
     ];
 
@@ -98,54 +98,6 @@ export class SemComponent implements OnInit {
         ]
       },
     ];
-
-    this.learningExp = [
-      {
-        title:'Real time unadultered overview of all departments performance',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'Notified before any issue becomes a problem',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'Better prepared in fulfilling accreditation, ministry and audit requirments',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'Make your team more efficient and productive',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'Make your team more efficient and productive',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'Reduce workload',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'Direct communication channel with all stakeholders (students,college staff and management)',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'All the communication gets screened categorised and prioritised',
-        details: null,
-        subPoints: []
-      },
-      {
-        title:'Informed decision making based on real authenticated data',
-        details: null,
-        subPoints: []
-      },
-    ]
    }
 
   ngOnInit() {

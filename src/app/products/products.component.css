@@ -4,3 +4,12 @@
 .quote b{
     font-size:20px;
 }
+div[text]{
+    position:relative;
+    width:100%
+}
+div[text] h5{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}

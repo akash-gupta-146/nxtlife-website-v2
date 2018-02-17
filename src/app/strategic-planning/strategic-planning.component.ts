@@ -88,8 +88,10 @@ export class StrategicPlanningComponent implements OnInit {
           type:'feature'
         },
         {
-          name:`Integrates with,
-          Ellucian Banner and other ERP systems Internal Audit and Risk Management System Budget Plan`,
+          name:`Integrates with:
+          • Ellucian Banner and other ERP systems,
+          • Internal Audit & Risk Management System  and
+          • Budget Plan`,
           description:'',
           icon:'',
           route:'',
