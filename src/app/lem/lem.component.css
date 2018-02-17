@@ -14,7 +14,7 @@ header {
  left: 0;
  width: 100%;
  height: 100%;
- background-image: linear-gradient(#887af9, #7c6bf8);
+ background-image: linear-gradient(#37474F, #263238);
  transform: skewY(-6deg);
  transform-origin: top left;
 }
@@ -31,7 +31,7 @@ header h1 {
  color: white;
 }
 .features h2{
-    color:#7c6bf8;
+    color:#263238;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ header h1 {
     flex-wrap: wrap;
 }
 .features-flex .flex-box{
-    background:#7c6bf8;
+    background:#263238;
     border-radius:25px;
     margin:10px 10px;
     color:white;
@@ -51,7 +51,7 @@ header h1 {
     background-color:#fff!important;
     border-radius:25px;
     margin:10px 10px;
-    color:#7c6bf8;
+    color:#263238;
 }
 .features-flex .point{
     position: relative;
@@ -61,7 +61,7 @@ header h1 {
 .benefits{
     position: relative;
     width:100%;
-    background-image:linear-gradient(#7c6bf8,#887af9);
+    background-image:linear-gradient(#37474F,#37474F);
     z-index: -1;
     padding:20px 0;
 }
@@ -80,7 +80,7 @@ header h1 {
 
 
 .learning-exp h3{
-    color: #7c6bf8;
+    color: #263238;
     text-align: center;
 }
 
@@ -96,15 +96,38 @@ header h1 {
    margin:10px;
 }
 .flex-box .bx:nth-child(even){
-    background:#887af9;
+    background:#37474F;
     border-radius: 25px;
     color:white;
 }
 .flex-box .bx:nth-child(odd){
-    background:#7c6bf8;
+    background:#263238;
     color:white;
 }
 
+
+
+
+.benefits .image img{
+    display: block;
+    margin:auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.benefits div[text]{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+.benefits ul{
+    list-style: none;
+}
+.benefits ul li{
+    color:white;
+    font-size:20px;
+}
 
 /* 
 .background{

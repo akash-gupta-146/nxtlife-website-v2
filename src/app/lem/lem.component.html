@@ -27,18 +27,24 @@
 </div>
 
 <div class="benefits">
-  <h2>Benefits</h2>
-      <div class="features-flex">
-          <div class="flex-box-benefits" *ngFor="let feature of benefits">
-              <div class="point">
-                  <h5>{{ feature.title }}</h5>
-                  <p>{{ feature.details }}</p>
-                  <ul *ngFor="let point of feature.subPoints">
-                    <li>{{ point }}</li>
-                  </ul>
-                </div>
+  <div class="container">
+      <h2>Benefits</h2>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div text>
+            <ul>
+              <li *ngFor="let feature of benefits">
+                  {{ feature.title }}
+              </li>
+            </ul>
           </div>
-    </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 image">
+          <img src="http://www.avanzegroup.com/image/learning-platforms.png">
+        </div>
+  </div>
+  </div>
+
   
 </div>
 
