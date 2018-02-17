@@ -270,19 +270,20 @@ a:focus{
     position:absolute;
 }
 .image-effect .bridge1{
-    width:40%;
-    top:47%;
+    width:43%;
+    top:40%;
     animation-name:bridge1 !important;
     animation-duration:0.5s;
     animation-delay:1s;
     opacity:0;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+
 }
 
 .image-effect .bridge2{
-    width:40%;
-    top:47%;
+    width:43%;
+    top:40%;
     animation-name:bridge2 !important;
     animation-duration:0.5s;
     animation-delay:1s;
@@ -291,9 +292,10 @@ a:focus{
     animation-timing-function: linear;
 }
 
+
 .image-effect .hand{
     top:10px;
-    width: 57%;
+    width: 25%;
     left: 50%;
     transform: translate(-50%);
     animation-name:hand !important;
