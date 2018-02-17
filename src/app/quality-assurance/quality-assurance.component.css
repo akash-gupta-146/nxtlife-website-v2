@@ -52,14 +52,17 @@
     padding:20px;
     text-align:center;
     position:relative;
+    outline: 5px solid white
 }
 .blocks .text-part{
     position:relative;
     top:50%;
     transform: translateY(-50%);
+    font-size: 20px;
 }
 .blocks .text-part i{
     font-size:3vw;
+    margin-bottom:20px;
 }
 .blocks .box:nth-child(odd){
     background:#333982;
@@ -69,15 +72,24 @@
     background:#f2f2f2;
 }
 .blocks .box:nth-child(even) i{
-    color:#01ae21;
+    color:black;
+    font-size: 60px;
+}
+.blocks .box:nth-child(odd) i{
+    font-size: 60px;
 }
 /* end of second block */
 
 /* block 3 */
+.block3{
+    background:#333982;
+    padding:20px 30px;
+}
 .block3 h3{
-    color:#01ae21;
+    color:white;
     margin-top:25px;
     margin-bottom:50px;
+    text-align: center;
 }
 .block3 .block{
     display:flex;
@@ -85,7 +97,7 @@
 }
 .block3 .block .icon{
     padding: 17px;
-    border: 1px solid gray;
+    border: 1px solid #01ae21;
     border-radius: 50%;
     height: 60px;
     width: 60px !important;
@@ -93,9 +105,11 @@
     color: #01ae21;
     font-size: 25px;
     line-height: 10px;
+    background:white;
 }
 .block3 .block .text{
     padding-left:10px;
+    color:white;
 }
 .block3 .image-section{
     height: 230px;
@@ -136,6 +150,7 @@
 }
 .benefits-block .flex-blocks:nth-child(odd){
     background:#f2f2f2;
+    color:black;
 }
 .benefits-block .text{
     position:relative;
@@ -143,3 +158,16 @@
     transform: translateY(-50%);
 }
 /* end of section 4 */
+
+
+.features-flex .flex-box{
+    margin:10px 10px;
+}
+.flex-box-benefits{
+    margin:10px 10px;
+}
+.features-flex .point{
+    position: relative;
+    padding: 15px 20px 10px;
+}
+

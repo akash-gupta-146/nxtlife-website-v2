@@ -21,7 +21,6 @@
         </div>
       </div>
         </div>        
-
   </div>
 </div> -->
 <div class="mt-50"></div>
@@ -51,9 +50,14 @@
               <div class="text-part">
                 <h1>Quality Assurance</h1>
                 <div class="details">
-                  Over last two decades while QA approaches in higher education has gone through remarkable evolution.
-                  <br>many higher education institutions still have primitive approach to quality and/or have a non-systematic QA system
-                  or a QA system which is not linked with policy and planning.
+                  Approach towards quality assurance in higher education institutes has gone through remarkable evolution over last two decades.<br>
+                  Many higher education institutes still have:
+                  <ul>
+                    <li>Primitive approach to quality</li>
+                    <li>Non-Systematic Quality Assurance System</li>
+                    <li>Quality Assurance system which is not linked with policy and planning</li>
+                    <li>Focus mostly on program qualities Assurance</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -63,89 +67,48 @@
 <!-- end of section 1 -->
 
 <!-- Section 2 -->
+<div class="our-solution">
+
+</div>
 <div class="row blocks">
-  <div class="col-lg-4 col-md-4 col-sm-12 box">
-    <div class="text-part">
-      <i class="fa fa-binoculars"></i>
-      <p>
-        After a careful consideration of various Higher Education Quality Assurance models from around the world, we developed an
-        integrated model for QA, Risk and planning.
-      </p>
-    </div>
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12 box">
-    <div class="text-part">
-      <i class="fa fa-binoculars"></i>
-      <p>
-        Our software solution for QA is based on that model and is revolutionary as it does not only integrates ideas from higher
-        education research but also weaves in key elements of higher education which have strong influence on quality of
-        teaching and learning environment, processes and intended outcomes.
-      </p>
-    </div>
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12 box">
-    <div class="text-part">
-      <i class="fa fa-binoculars"></i>
-      <p>
-        The model keep learners at its centre and emphasizes responsibility and accountability of staff and faculty towards students
-        who are the key customers.
-      </p>
-    </div>
+  <div class="col-lg-3 col-md-6 col-sm-12 box" *ngFor="let feature of ourSol">
+      <div class="features-flex">
+          <div class="flex-box">
+              <div class="point">
+                  <h5>{{ feature.title }}</h5>
+                  <i class="fa" [ngClass]="feature.icon"></i>
+                  <p>{{ feature.details }}</p>
+                  <ul *ngFor="let point of feature.subPoints">
+                    <li>{{ point }}</li>
+                  </ul>
+                </div>
+          </div>
+      </div>
   </div>
 </div>
 <!-- end of section 2 -->
 
 <!-- Section 3 -->
-<div class="container block3" id="product">
+<div class="block3" id="product">
   <h3>Product Description</h3>
 
   <div class="row">
     <div class="col-lg-8 col-sm-12">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let product of productDesc">
           <div class="block">
             <div class="icon">
-              <i class="fa fa-binoculars"></i>
+              <i class="fa fa-check"></i>
             </div>
             <div class="text">
-              There is a dearth of software solutions when it comes to the QA in higher education
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="block">
-            <div class="icon">
-              <i class="fa fa-binoculars"></i>
-            </div>
-            <div class="text">
-              Even the ones that are available in the focus mostly on program quality assurance.
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="block">
-            <div class="icon">
-              <i class="fa fa-binoculars"></i>
-            </div>
-            <div class="text">
-              Our solution is unique as it focuses on both the programs and services quality.
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="block">
-            <div class="icon">
-              <i class="fa fa-binoculars"></i>
-            </div>
-            <div class="text">
-              It satisfies the requirements of almost all accrediting and QA agencies.
+              {{ product.name }}
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-4 col-sm-12 image-section">
-      <img src="https://vignette.wikia.nocookie.net/camphalfbloodroleplay/images/5/5a/Checkmark.png/revision/latest?cb=20120103192321"
+      <img src="https://edzsystems.com/wp-content/uploads/EDZ/edz_hero_software_product_development.png"
         width="100%">
     </div>
   </div>

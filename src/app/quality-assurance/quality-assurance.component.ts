@@ -3,7 +3,7 @@ import { Block } from '../block-heading/block-heading.component';
 import { ParaImage } from '../left-image/left-image.component';
 import { ListData } from '../dual-list/dual-list.component';
 import { FabList } from '../fab-title/fab-title.component';
-import { Router, NavigationEnd } from '@angular/router';
+import { Features } from '../lem/lem.component';
 
 @Component({
   selector: 'app-quality-assurance',
@@ -23,9 +23,10 @@ export class QualityAssuranceComponent implements OnInit {
   heading: Block[];
   paraData: ParaImage[];
   listData: ListData[];
+  productDesc: ListData[];
+  ourSol:FeaturesIcon[];
   fabList: FabList;
-  constructor(private router: Router) {
-    window.scrollTo(0, 0);
+  constructor() {
 
     this.fabList =
       {
@@ -126,6 +127,98 @@ export class QualityAssuranceComponent implements OnInit {
         type: ''
       }
     ];
+
+    this.productDesc = [
+      {
+        name: 'Manage, Organize and track all your QA activities in a central place.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+      {
+        name: 'Flexible enough to handle multiple campuses hierarchy.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+      {
+        name: 'Satisfy the requirment of almost all accredity and quality assurance agencies.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+      {
+        name: 'Easy access for entire Quality Assurance team.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+      {
+        name: 'Run surveys and polls; Link data directly with Risk Management System and/or Stakeholder Management System.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+      {
+        name: ' Effectively monitor program health indicators',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+      {
+        name: 'Identify area of improvement and develop action plans to address issues.',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+      {
+        name: 'Integrates with ERPs __________',
+        description: '',
+        icon: '',
+        route: '',
+        type: ''
+      },
+    ];
+
+    this.ourSol = [
+      {
+        title:'Integrated Model',
+        details: 'for Quality Assurance, Risk and Planning',
+        subPoints: [
+        ],
+        icon:'fa-american-sign-language-interpreting'
+      },
+      {
+        title:'Revolutionary',
+        details: 'Integrates ideas from:',
+        subPoints: ['Higher Education Institute Research',
+        'Plus weaves in key elements of higher education'
+        ],
+        icon:'fa-globe',
+      },
+      {
+        title:'Keeps learners at its center',
+        details: 'Emphasis responsibility and allow ability of staff and faculty towards students',
+        subPoints: [
+        ],
+        icon:'fa-opencart'
+      },
+      {
+        title:'Focus',
+        details: 'Focuses on both the programs and services quality',
+        subPoints: [
+        ],
+        icon:'fa-binoculars'
+      },
+    ];
+    
   }
 
   updateHeader(evt) {
@@ -142,4 +235,11 @@ export class QualityAssuranceComponent implements OnInit {
 
 }
 
+}
+
+export class FeaturesIcon{
+  title:string;
+  details:string;
+  subPoints:string[];
+  icon: string;
 }
