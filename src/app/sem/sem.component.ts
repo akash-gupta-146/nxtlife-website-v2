@@ -77,21 +77,21 @@ export class SemComponent implements OnInit {
 
     this.framework = [
       {
-        title:'CE Assessment',
+        title:'Assessment - Revisit Business Strategies and Performance',
         details: 'Revisit Business Strategies and Performance',
         subPoints: [
           'Stakeholders Analysis','Process Audit','Experience Audit'
         ]
       },
       {
-        title:'CE Mapping',
+        title:'Mapping - Develop Customer Experience, Manage Touchpoints, Transform Culture',
         details: 'Develop Customer Experience, Manage Touchpoints, Transform Culture',
         subPoints: [
           'Brand Value Alignment','Service deployment','Standards and systems development','Mindset and competence development','Reward and recognition'
         ]
       },
       {
-        title:'CE Optimization',
+        title:'Optimization - Drive continuous Customer Experience Management ',
         details: 'Drive continuous Customer Experience Management ',
         subPoints: [
           'Service Performance tracking','Service Innovation ','Process improvement','Continuous Learning '
@@ -100,8 +100,17 @@ export class SemComponent implements OnInit {
     ];
    }
 
-  ngOnInit() {
-  }
+
+   ngOnInit() {
+    this.scrollToBottom();
+    
+    }
+    scrollToBottom = () => {
+      setTimeout(() => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    }
 
 }
 

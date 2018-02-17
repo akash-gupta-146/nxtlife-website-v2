@@ -3,7 +3,7 @@ import { Block } from '../block-heading/block-heading.component';
 import { ParaImage } from '../left-image/left-image.component';
 import { ListData } from '../dual-list/dual-list.component';
 import { FabList } from '../fab-title/fab-title.component';
-
+ declare const $;
 @Component({
   selector: 'app-strategic-planning',
   templateUrl: './strategic-planning.component.html',
@@ -134,6 +134,14 @@ export class StrategicPlanningComponent implements OnInit {
       }
   }
   ngOnInit() {
+    this.scrollToBottom();
+  }
+
+  scrollToBottom = () => {
+    setTimeout(() => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
   }
 
 }

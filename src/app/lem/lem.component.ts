@@ -158,8 +158,17 @@ export class LemComponent implements OnInit {
    }
 
 
-  ngOnInit() {
-  }
+  
+   ngOnInit() {
+    this.scrollToBottom();
+    
+    }
+    scrollToBottom = () => {
+      setTimeout(() => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    }
 
 }
 

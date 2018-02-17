@@ -23,6 +23,7 @@ import { FabTitle } from './fab-title/fab-title.component';
 import { LemComponent } from './lem/lem.component';
 import { FooterComponent } from './footer/footer.component';
 import { SemComponent } from './sem/sem.component';
+import { RiskComponent } from './risk/risk.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SemComponent } from './sem/sem.component';
     FabTitle,
     LemComponent,
     FooterComponent,
-    SemComponent
+    SemComponent,
+    RiskComponent
   ],
   imports: [
     BrowserModule,

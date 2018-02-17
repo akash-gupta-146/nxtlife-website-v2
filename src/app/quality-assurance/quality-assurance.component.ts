@@ -44,7 +44,7 @@ export class QualityAssuranceComponent implements OnInit {
         paragraph: ''
       },
       {
-        title: 'Product Description',
+        title: 'Product Details',
         paragraph: ''
       },
       {
@@ -179,7 +179,7 @@ export class QualityAssuranceComponent implements OnInit {
         type: ''
       },
       {
-        name: 'Integrates with ERPs __________',
+        name: 'Integrates with ERPs including Ellucian Banner',
         description: '',
         icon: '',
         route: '',
@@ -231,10 +231,15 @@ export class QualityAssuranceComponent implements OnInit {
   }
 
   ngOnInit() {
-
+this.scrollToBottom();
 
 }
-
+scrollToBottom = () => {
+  setTimeout(() => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+}
 }
 
 export class FeaturesIcon{
