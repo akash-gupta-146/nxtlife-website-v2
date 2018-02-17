@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { QualityAssuranceComponent } from './quality-assurance/quality-assurance.component';
 import { LemComponent } from './lem/lem.component';
 import { SemComponent } from './sem/sem.component';
+import { RiskComponent } from './risk/risk.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'home', pathMatch:'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path:'sp', component: StrategicPlanningComponent },
   { path:'qa', component: QualityAssuranceComponent },
   { path:'lem', component: LemComponent},
-  { path:'sem', component: SemComponent}
+  { path:'sem', component: SemComponent},
+  { path:'rm', component: RiskComponent}
 ]
 
 @NgModule({

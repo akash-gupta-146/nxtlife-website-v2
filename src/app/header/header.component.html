@@ -29,20 +29,14 @@
             <a class="dropdown-item" routerLink="qa">Quality Assurance</a>          
             <a class="dropdown-item" routerLink="lem">Learning Experience Management</a>
             <a class="dropdown-item" routerLink="sem">Stakeholders' Experience Management</a>
-          <a class="dropdown-item" href="#">Risk Management & Internal Audit</a>
+          <a class="dropdown-item" routerLink="rm">Risk Management & Internal Audit</a>
           <a class="dropdown-item" href="#">International University Ranking</a>
         </div>
       </li>
-      <li class="nav-item dropdown" >
-        <a class="nav-link" [ngx-scroll-to]="'#services'" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item" [ngx-scroll-to]="'#services'">
+        <a class="nav-link" routerLink='home'>
           Services
-          <i class="material-icons">arrow_drop_down</i>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Consultancy</a>
-          <a class="dropdown-item">Training</a>
-          <a class="dropdown-item" href="#">Software Development</a>
-        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" [ngx-scroll-to]="'#about'">About us</a>

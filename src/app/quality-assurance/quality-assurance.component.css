@@ -122,42 +122,7 @@
 }
 /* end of block 3 */
 
-/* section 4 */
-.section-benefits{
-    background:#f2f2f2;
-    padding:50px 0;
-}
-.section-benefits h3{
-    color:#01ae21;
-    text-align: center;
-}
-.benefits-block{
-    display: flex;
-    justify-content: center;
-}
-.benefits-block .flex-blocks{
-    width:300px;
-    height:400px;
-    margin:10px;
-    padding:10px;
-    box-shadow: 0 0 22px #00000080;
-    text-align: center;
-    font-size: 20px;
-}
-.benefits-block .flex-blocks:nth-child(even){
-    background:#333982;
-    color:#f2f2f2;
-}
-.benefits-block .flex-blocks:nth-child(odd){
-    background:#f2f2f2;
-    color:black;
-}
-.benefits-block .text{
-    position:relative;
-    top:50%;
-    transform: translateY(-50%);
-}
-/* end of section 4 */
+
 
 
 .features-flex .flex-box{
