@@ -1,9 +1,13 @@
 
 
+app-lem{
+    animation:slideInDown 0.5s;
+}
 header {
  position: relative;
  height: 300px;
  overflow: hidden;
+ animation:slideInDown 0.5s;
 }
 
 .header__bg {
@@ -43,6 +47,12 @@ header h1 {
     margin:10px !important;
     border:0px;
 }
+.features .card:nth-child(odd){
+    animation:slideInLeft 0.7s;
+}
+
+
+
 .features .card div[header]{
     padding:20px 5px;
     background:#263238;

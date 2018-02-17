@@ -2,7 +2,7 @@
     background:#333333;
 }
 .risk-top .left{
-
+    animation:slideInLeft 0.5s;
 }
 .risk-top .left h1{
     color:white;
@@ -19,6 +19,7 @@
 .risk-top .image{
     height:500px;
     background-size: cover; 
+    animation:slideInRight 0.5s;
     /* background:url(); */
 }
 .risk-top .image img{
@@ -35,6 +36,7 @@
 .our-solution h3{
     color:#333333;
     text-align: center;
+    animation:bounceInDown 0.5s;
 }
 .our-solution .flex-cards{
     display: flex;
@@ -49,11 +51,18 @@
     padding: 25px;
     margin:25px;
 }
+.our-solution .flex-cards .box:nth-child(odd){
+    animation:slideInUp 0.5s;
+}
+.our-solution .flex-cards .box:nth-child(even){
+    animation:slideInDown 0.5s;
+}
 
 
 .key-features{
     padding:50px 10px;
     background-size: cover;
+    animation:slideInLeft 0.5s;
     background:url(http://supplychainbeyond.com/wp-content/uploads/2017/01/risk-management-in-supply-chain.jpg);
 }
 .key-features h3{

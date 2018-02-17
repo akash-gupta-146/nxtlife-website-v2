@@ -67,9 +67,11 @@
 .blocks .box:nth-child(odd){
     background:#333982;
     color:white;
+    animation:slideInDown 0.5s;
 }
 .blocks .box:nth-child(even){
     background:#f2f2f2;
+    animation:slideInUp 0.5s;
 }
 .blocks .box:nth-child(even) i{
     color:black;
@@ -136,3 +138,9 @@
     padding: 15px 20px 10px;
 }
 
+#description img{
+    animation:slideInUp 0.5s;
+}
+#description .text-part{
+    animation:fadeIn 1.5s;
+}

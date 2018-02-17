@@ -24,6 +24,7 @@
     background:#343b4c;
    padding:100px 100px 0 100px;
     position: relative;
+    animation:slideInDown 0.5s;
     /* height:100px; */
 }
 .main-title h1{
@@ -56,6 +57,7 @@
 }
 .objectives .title h3{
     color: #343b4b;
+    animation:slideInDown 0.5s;
 }
 .objectives .title p{
     color:gray;
@@ -72,6 +74,12 @@
     background:#343b4c !important;
     text-align: center;
     margin:50px 10px;
+}
+.objective-flex .box:nth-child(odd){
+    animation:slideInUp 0.5s;
+}
+.objective-flex .box:nth-child(even){
+    animation:slideInDown 0.5s;
 }
 .box .icon-block{
     border-radius:50%;
@@ -95,6 +103,7 @@
      background: #343b4c;
     padding:20px;
     position: relative;
+    animation:slideInLeft 0.5s;
 }
 .ex-drive img{
     height: 25vw;

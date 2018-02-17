@@ -42,8 +42,7 @@
     background: #000000c2;
     top:0;
     left:0;
-    animation-name:hoverSlide;
-    animation-duration:0.3s;
+    animation:hoverSlide 0.3s;
 }
 
 .hover-card:hover div[hover-area]{

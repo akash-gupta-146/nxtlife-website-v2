@@ -119,12 +119,14 @@ div[text]{
 }
     .two-col-block .image-block{
        background-size:cover;
+       animation:slideInRight 0.5s;
     }
     .two-col-block .text-block{
         padding:50px;
         background: #1c1c1e;
         color:white;
         height:715px;
+        animation:slideInLeft 0.5s;
     }
     .v-center{
         position: relative;
