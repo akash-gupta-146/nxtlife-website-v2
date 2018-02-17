@@ -1,65 +1,179 @@
-
-
 <header>
-    <div class="header__bg"></div>
-    <h1>Learning Experience Management</h1>
-  </header>
-  
-  <div class="features">
-<div class="row">
-  
-    <div class="container">
-        <h2>Features</h2>
-        <div class="features-flex">
-          <div class="flex-box" *ngFor="let feature of features">
-              <div class="point">
-                  <h5>{{ feature.title }}</h5>
-                  <p>{{ feature.details }}</p>
-                  <ul *ngFor="let point of feature.subPoints">
-                    <li>{{ point }}</li>
-                  </ul>
-                </div>
-          </div>
-    </div>
+  <div class="header__bg"></div>
+  <h1>Learning Experience Management</h1>
+</header>
 
-    </div>
-  </div>
-</div>
-
-<div class="benefits">
-  <div class="container">
-      <h2>Benefits</h2>
-      <div class="row">
-        <div class="col-lg-6 col-sm-12">
-          <div text>
+<div class="features">
+  <div class="row">
+<div class="container">
+    <h2>Features</h2>
+  <div class="row">
+    <div class="col-lg-4 col-sm-12">
+        <div class="margin"></div>
+      <div class="card">
+        <div header>
+            <h5>Open Communication Channel</h5>
+        </div>
+        <div content>
+            <p>
+                Send a strong message to students that their opinion matters.
+            </p>
             <ul>
-              <li *ngFor="let feature of benefits">
-                  {{ feature.title }}
+              <li>
+                  Grievances
+              </li>
+              <li>
+                  Suggestions
+              </li>
+              <li>
+                  Appreciations
+              </li>
+              <li>
+                  Messaging
+              </li>
+              <li>
+                  Requests
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-12 image">
-          <img src="http://www.avanzegroup.com/image/learning-platforms.png">
-        </div>
-  </div>
-  </div>
-
-  
-</div>
-
-<div class="row">
-    <div class="learning-exp">
-      <h3>
-        Enhance Learning Experience
-      </h3>
-      <div class="flex-box">
-        <div class="bx" *ngFor="let lx of learningExp">
-          {{ lx.title }}
         </div>
       </div>
     </div>
+    <div class="col-lg-4 col-sm-12">
+        <div class="card">
+          <div header>
+              <h5>Important information in finger tips</h5>
+          </div>
+          <div content>
+              <p>
+                  <!-- Send a strong message to students that their opinion matters. -->
+              </p>
+              <ul>
+                <li>
+                    Calander
+                </li>
+                <li>
+                    Circular
+                </li>
+                <li>
+                    Assessments
+                </li>
+                <li>
+                    Assignments
+                </li>
+              </ul>
+          </div>
+  
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+          <div class="card">
+            <div header>
+                <h5>Academic Advisory</h5>
+            </div>
+            <div content>
+                <p>
+                    <!-- Send a strong message to students that their opinion matters. -->
+                </p>
+                <ul>
+                  <li>
+                      Faculty advisor identifies at-risk students
+                  </li>
+                  <li>
+                      Rating per module per term
+                  </li>
+                  <li>
+                      Faculty teaching the module gets view of all students rating
+                  </li>
+                  <li>
+                      Students does not get to see there rating
+                  </li>
+                </ul>
+            </div>
+    
+          </div>
+        </div>
   </div>
+  <div class="margin"></div>  <div class="margin"></div>
+  <div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div header>
+                <h5>Module and Lecture Evaluation</h5>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div header>
+                <h5>Alumni and Employer Feedback</h5>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div header>
+                <h5>Unique combination of anonymity with authenticity</h5>
+            </div>
+          </div>
+    </div>  
+    <div class="col-lg-6">
+        <div class="card">
+            <div header>
+                <h5>Customised real time reporting</h5>
+            </div>
+          </div>
+    </div>           
+  </div>
+</div>
+    <!-- <div class="container">
+      
+      <div class="features-flex">
+        <div class="flex-box" *ngFor="let feature of features">
+          <div class="point">
+            <h5>{{ feature.title }}</h5>
+            <p>{{ feature.details }}</p>
+            <ul *ngFor="let point of feature.subPoints">
+              <li>{{ point }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<div class="margin"></div>
+<div class="benefits">
+  <div class="container">
+    <h2>Benefits</h2>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <div text>
+          <ul>
+            <li *ngFor="let feature of benefits">
+              {{ feature.title }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 image">
+        <img src="http://www.avanzegroup.com/image/learning-platforms.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="learning-exp">
+    <h3>
+      Enhance Learning Experience
+    </h3>
+    <div class="flex-box">
+      <div class="bx" *ngFor="let lx of learningExp">
+        {{ lx.title }}
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
