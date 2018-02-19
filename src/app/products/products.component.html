@@ -1,20 +1,28 @@
 
 
-<div class="container bar">
+<div class="container-fluid bar">
     <app-block-heading [blockData]="heading"></app-block-heading>
-  <div class="row" nxtlife-list>
-    <div class="col-lg-6 col-sm-12"  *ngFor="let product of products">
-      <div li class="animation fadeInRight">
-        <div bullet>
-          <i class="fa" [ngClass]="product.icon"></i>
-        </div>
-        <div text>
-          <h5>{{ product.name }}</h5>
-          <!-- <p>{{ product.description }}</p> -->
-        </div>
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+          <div class="row" nxtlife-list>
+              <div class="col-lg-6 col-sm-12"  *ngFor="let product of products">
+                <div li class="animation fadeInLeft">
+                  <div bullet>
+                    <i class="fa" [ngClass]="product.icon"></i>
+                  </div>
+                  <div text>
+                    <h5>{{ product.name }}</h5>
+                    <!-- <p>{{ product.description }}</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img class="middle animation slideInRight" width="100%" style="margin-top:3vw" src="https://www.abit.bt/wp-content/uploads/2015/08/Software-Development-Services-1.png">
       </div>
     </div>
-  </div>
+
 </div>
 
 <div class="row">

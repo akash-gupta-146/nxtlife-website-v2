@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 /*header*/
 
 @keyframes slideUp{
@@ -14,7 +17,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 :root{
-    --main-one:#1f85c3;
+    --main-one:#1c1c1e;
     --main-two: #4CAF50;
 }
 /* bootstrap default */
@@ -130,7 +133,8 @@ a:focus{
   }
   
   .slideInRight {
-    animation-name: slideInRight;
+    -webkit-animation-name: slideInRight;
+
   }
 
 
@@ -517,7 +521,7 @@ div[nxtlife-list] div[li] div[bullet] i {
     text-align: center;
     width: 64px;
     border-radius: 100%;
-    color: #45aed6;
+    color: var(--main-one);
     box-shadow: inset 0 0 0 1px #d7d7d7;
     -webkit-box-shadow: inset 0 0 0 1px #d7d7d7;
     transition: background-color 400ms, background-color 400ms;
@@ -534,13 +538,13 @@ div[nxtlife-list] div[li] div[bullet] i:after{
     right: -10px;
     border: 4px solid #fff;
     border-radius: 20px;
-    background: #45aed6;
+    background: var(--main-one);
 }
 
 div[li]:hover div[bullet] i{
     color: white !important;
     line-height: 57px !important;
-    background:#45aed6 !important;
+    background:var(--main-one) !important;
     border:4px solid white;
     box-shadow: inset 0 0 0 5px rgba(77, 77, 77, 0.808);
     -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.8);
@@ -600,3 +604,9 @@ div[parallelx2]{
   color:white !important;
 }
 /* end of about page */
+
+.v-center{
+  position: relative;;
+  top:50%;
+  transform: translateY(-50%);
+}
