@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductData } from '../product-theme/product-theme.component';
 import { QualityAssuranceService } from '../app-services/quality-assurance.service';
+import { HeaderService } from '../app-services/header/header.service';
 
 @Component({
   selector: 'app-quality-assurance',
@@ -18,7 +19,9 @@ export class QualityAssuranceComponent implements OnInit {
   changePos: Number = 140;
 
   QualityAssurance:ProductData;
-  constructor(public qaService:QualityAssuranceService) {
+  constructor(public qaService:QualityAssuranceService,
+              public headerService:HeaderService          
+  ) {
 
     // this.fabList =
     //   {
@@ -166,13 +169,8 @@ export class QualityAssuranceComponent implements OnInit {
   }
 
   ngOnInit() {
-  this.scrollToBottom();
+  // this.headerService.scrollToBottom();
 }
-scrollToBottom = () => {
-  setTimeout(() => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  });
-}
+
 }
 
