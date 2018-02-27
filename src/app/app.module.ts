@@ -24,6 +24,7 @@ import { LemComponent } from './lem/lem.component';
 import { FooterComponent } from './footer/footer.component';
 import { SemComponent } from './sem/sem.component';
 import { RiskComponent } from './risk/risk.component';
+import { ProductThemeComponent } from './product-theme/product-theme.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { RiskComponent } from './risk/risk.component';
     LemComponent,
     FooterComponent,
     SemComponent,
-    RiskComponent
+    RiskComponent,
+    ProductThemeComponent
   ],
   imports: [
     BrowserModule,

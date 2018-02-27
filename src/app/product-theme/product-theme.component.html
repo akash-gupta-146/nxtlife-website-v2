@@ -1,0 +1,75 @@
+
+<!-- Section 1 -->
+<div class="top" id="description">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <!-- <img src="assets/images/girl-boy.png"> -->
+              <img [src]='productData.mainImage'>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="text-part">
+                <h1>{{ productData.title }}</h1>
+                <div class="details">
+                  {{ productData.desctiption }}
+                  <ul>
+                    <li *ngFor="let point of productData.descriptionPoints">
+                      {{ point }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+<!-- end of section 1 -->
+
+<!-- Section 2 -->
+<div class="our-solution">
+
+</div>
+<div class="row blocks">
+  <div class="col-lg-3 col-md-6 col-sm-12 box" *ngFor="let feature of productData.features">
+      <div class="features-flex">
+          <div class="flex-box">
+              <div class="point">
+                  <h5>{{ feature.title }}</h5>
+                  <i class="fa" [ngClass]="feature.icon"></i>
+                  <p>{{ feature.details }}</p>
+                  <ul *ngFor="let point of feature.subPoints">
+                    <li>{{ point }}</li>
+                  </ul>
+                </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end of section 2 -->
+
+<!-- Section 3 -->
+<!-- <div class="block3" id="product">
+  <h3>Product Description</h3>
+
+  <div class="row">
+    <div class="col-lg-8 col-sm-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let product of productDesc">
+          <div class="block">
+            <div class="icon">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="text">
+              {{ product.name }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12 image-section">
+      <img src="https://edzsystems.com/wp-content/uploads/EDZ/edz_hero_software_product_development.png"
+        width="100%">
+    </div>
+  </div>
+</div> -->
+<!-- section 3 -->

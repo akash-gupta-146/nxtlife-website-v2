@@ -1,95 +1,7 @@
-<!-- <div id="nxtlifeCarousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
 
-      <div class="carousel-item active">
-        <div bird>
-            <div id="pictureframe">
-                <div id="bird">
-                  <div id="body2"></div>
-                  <div id="body1"></div>
-                  <div id="wing-l"></div>  
-                  <div id="wing-r"></div>  
-                </div>
-              </div> 
-            
-          <div caption>
-            <h3>Risk Management & Internal Audit</h3>
-            <span>"consectetur adipiscing elit. Etiam posuere urna in suscipit tempor"</span>
-          </div>
-          <div overlay>
-          <img class="d-block w-100" src="assets/images/carousel/rm/back.png" alt="First slide">
-        </div>
-      </div>
-        </div>        
-  </div>
-</div> -->
-<div class="mt-50"></div>
-<div [ngClass]="{'page-scroll-header': isScrolled}">
-  <div class="fab-title">
-    <div class="dropdown fab-dropDown">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Quality Assurance
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" [ngx-scroll-to]="'#description'">Description</a>
-        <a class="dropdown-item" [ngx-scroll-to]="'#product'">Our Product</a>
-        <a class="dropdown-item" [ngx-scroll-to]="'#benefits'">Benefits</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Section 1 -->
-<div class="top" id="description">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <img src="assets/images/girl-boy.png">
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="text-part">
-                <h1>Quality Assurance</h1>
-                <div class="details">
-                  Approach towards quality assurance in higher education institutes has gone through remarkable evolution over last two decades.<br>
-                  Many higher education institutes still have:
-                  <ul>
-                    <li>Primitive approach to quality</li>
-                    <li>Non-Systematic Quality Assurance System</li>
-                    <li>Quality Assurance system which is not linked with policy and planning</li>
-                    <li>Focus mostly on program qualities Assurance</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-</div>
-<!-- end of section 1 -->
-
-<!-- Section 2 -->
-<div class="our-solution">
-
-</div>
-<div class="row blocks">
-  <div class="col-lg-3 col-md-6 col-sm-12 box" *ngFor="let feature of ourSol">
-      <div class="features-flex">
-          <div class="flex-box">
-              <div class="point">
-                  <h5>{{ feature.title }}</h5>
-                  <i class="fa" [ngClass]="feature.icon"></i>
-                  <p>{{ feature.details }}</p>
-                  <ul *ngFor="let point of feature.subPoints">
-                    <li>{{ point }}</li>
-                  </ul>
-                </div>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- end of section 2 -->
-
+<app-product-theme [productData]="QualityAssurance"></app-product-theme>
 <!-- Section 3 -->
-<div class="block3" id="product">
+<!-- <div class="block3" id="product">
   <h3>Product Description</h3>
 
   <div class="row">
@@ -112,7 +24,7 @@
         width="100%">
     </div>
   </div>
-</div>
+</div> -->
 <!-- section 3 -->
 
 
