@@ -25,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SemComponent } from './sem/sem.component';
 import { RiskComponent } from './risk/risk.component';
 import { ProductThemeComponent } from './product-theme/product-theme.component';
+import { QualityAssuranceService } from './app-services/quality-assurance.service';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { ProductThemeComponent } from './product-theme/product-theme.component';
       apiKey: 'AIzaSyCaq46VJQf5eWFf2RAZQLUzA_YzMDA1tQA'
     })
   ],
-  providers: [],
+  providers: [QualityAssuranceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
