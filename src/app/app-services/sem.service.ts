@@ -70,7 +70,7 @@ export class SemService {
         },
       ],
       color: {
-        title:'#e40613',
+        title:'#3ba935',
         color1:'#e40613',
         color1Text:'white',
         color2:'#3ba935',

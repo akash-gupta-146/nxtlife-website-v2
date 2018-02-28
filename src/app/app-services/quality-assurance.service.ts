@@ -9,7 +9,7 @@ export class QualityAssuranceService {
 
     this.QualityAssurance = 
     {
-      title: 'Quality Assurance',
+      title: 'Quality Assurance & Accreditation',
       description: `Approach towards quality assurance in higher education institutes has gone through remarkable evolution over last two decades.
       Many higher education institutes still have`,
       descriptionPoints: [

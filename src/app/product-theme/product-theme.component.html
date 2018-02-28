@@ -12,7 +12,7 @@
                 <h1 [style.color]='productData.color.title'>{{ productData.title }}</h1>
                 <div class="details">
                   {{ productData.description }}
-                  <ul>
+                  <ul *ngIf="descriptionPoints">
                     <li *ngFor="let point of productData.descriptionPoints">
                       {{ point }}
                     </li>

@@ -30,6 +30,7 @@ import { HeaderService } from './app-services/header/header.service';
 import { StrategicPlanningService } from './app-services/strategic-planning.service';
 import { LemService } from './app-services/lem.service';
 import { SemService } from './app-services/sem.service';
+import { RmService } from './app-services/rm.service';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { SemService } from './app-services/sem.service';
     HeaderService,
     StrategicPlanningService,
     LemService,
-    SemService
+    SemService,
+    RmService
   ],
   bootstrap: [AppComponent]
 })
