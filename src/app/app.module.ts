@@ -29,6 +29,7 @@ import { QualityAssuranceService } from './app-services/quality-assurance.servic
 import { HeaderService } from './app-services/header/header.service';
 import { StrategicPlanningService } from './app-services/strategic-planning.service';
 import { LemService } from './app-services/lem.service';
+import { SemService } from './app-services/sem.service';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,9 @@ import { LemService } from './app-services/lem.service';
     QualityAssuranceService,
     HeaderService,
     StrategicPlanningService,
-    LemService],
+    LemService,
+    SemService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
