@@ -49,7 +49,14 @@ export class QualityAssuranceService {
           ],
           icon:'fa-binoculars'
         },
-      ]
+      ],
+      color: {
+        title:'#499ad5',
+        color1:'#499ad5',
+        color1Text:'white',
+        color2:'#cacac6',
+        color2Text:'black'
+      }
     };
    }
 

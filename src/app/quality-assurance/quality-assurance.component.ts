@@ -169,7 +169,7 @@ export class QualityAssuranceComponent implements OnInit {
   }
 
   ngOnInit() {
-  // this.headerService.scrollToBottom();
+  this.headerService.scrollToBottom();
 }
 
 }

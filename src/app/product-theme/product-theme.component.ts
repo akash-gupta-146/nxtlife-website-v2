@@ -23,7 +23,9 @@ export class ProductThemeComponent implements OnInit {
 
   @Input() productData:ProductData;
 
-  constructor() {}
+  constructor() {
+  }
+
 
   updateHeader(evt) {
     this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
@@ -45,6 +47,9 @@ scrollToBottom = () => {
   });
 }
 
+scrollRight(){
+  window.scrollBy(100, 0);
+}
 }
 
 export class FeaturesIcon{
@@ -60,4 +65,13 @@ export class ProductData{
   mainImage:string;
   descriptionPoints:string[];
   features:FeaturesIcon[];
+  color:colorSchema;
+}
+
+export class colorSchema{
+  title:string;
+  color1:string;
+  color1Text:string;
+  color2:string;
+  color2Text:string;
 }

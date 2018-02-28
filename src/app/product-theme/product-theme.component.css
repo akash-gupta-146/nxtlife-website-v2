@@ -39,9 +39,9 @@
     top:50%;
     transform: translateY(-50%);
 }
-.top h1{
+/* .top h1{
     color:#01ae21;
-}
+} */
 .top .details{
     margin-top:50px;
     color:darkslategray;
@@ -49,7 +49,8 @@
 
 /* second block */
 .blocks .box{
-    padding:20px;
+    /* padding:20px; */
+    padding:0px;
     text-align:center;
     position:relative;
     outline: 5px solid white
@@ -65,16 +66,16 @@
     margin-bottom:20px;
 }
 .blocks .box:nth-child(odd){
-    background:#333982;
-    color:white;
+    /* background:#333982; */
+    /* color:white; */
     animation:slideInDown 0.5s;
 }
 .blocks .box:nth-child(even){
-    background:#f2f2f2;
+    /* background:#f2f2f2; */
     animation:slideInUp 0.5s;
 }
 .blocks .box:nth-child(even) i{
-    color:black;
+    /* color:black; */
     font-size: 60px;
 }
 .blocks .box:nth-child(odd) i{
@@ -125,13 +126,17 @@
 /* end of block 3 */
 
 
-
+.features-flex{
+    height: 250px;
+    overflow-y: scroll;
+    position: relative;
+}
 
 .features-flex .flex-box{
-    margin:10px 10px;
+    /* margin:10px 10px; */
 }
 .flex-box-benefits{
-    margin:10px 10px;
+    /* margin:10px 10px; */
 }
 .features-flex .point{
     position: relative;

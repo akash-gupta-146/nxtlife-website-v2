@@ -27,6 +27,7 @@ import { RiskComponent } from './risk/risk.component';
 import { ProductThemeComponent } from './product-theme/product-theme.component';
 import { QualityAssuranceService } from './app-services/quality-assurance.service';
 import { HeaderService } from './app-services/header/header.service';
+import { StrategicPlanningService } from './app-services/strategic-planning.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { HeaderService } from './app-services/header/header.service';
     FooterComponent,
     SemComponent,
     RiskComponent,
-    ProductThemeComponent
+    ProductThemeComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,8 +61,10 @@ import { HeaderService } from './app-services/header/header.service';
       apiKey: 'AIzaSyCaq46VJQf5eWFf2RAZQLUzA_YzMDA1tQA'
     })
   ],
-  providers: [QualityAssuranceService,
-    HeaderService],
+  providers: [
+    QualityAssuranceService,
+    HeaderService,
+    StrategicPlanningService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

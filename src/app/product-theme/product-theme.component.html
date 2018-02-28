@@ -9,9 +9,9 @@
             </div>
             <div class="col-lg-6 col-sm-12">
               <div class="text-part">
-                <h1>{{ productData.title }}</h1>
+                <h1 [style.color]='productData.color.title'>{{ productData.title }}</h1>
                 <div class="details">
-                  {{ productData.desctiption }}
+                  {{ productData.description }}
                   <ul>
                     <li *ngFor="let point of productData.descriptionPoints">
                       {{ point }}
@@ -29,22 +29,39 @@
 <div class="our-solution">
 
 </div>
-<div class="row blocks">
-  <div class="col-lg-3 col-md-6 col-sm-12 box" *ngFor="let feature of productData.features">
-      <div class="features-flex">
-          <div class="flex-box">
-              <div class="point">
-                  <h5>{{ feature.title }}</h5>
-                  <i class="fa" [ngClass]="feature.icon"></i>
-                  <p>{{ feature.details }}</p>
-                  <ul *ngFor="let point of feature.subPoints">
-                    <li>{{ point }}</li>
-                  </ul>
-                </div>
-          </div>
+
+<div class="blocks" style="display:flex;flex-wrap: nowrap;overflow-x: auto;">
+  <div class="box" *ngFor="let feature of productData.features; let i = index" style="flex: 0 0 auto;width:30vw">
+    <div class="features-flex" *ngIf="i%2==0" [style.background-color]="productData.color.color1">
+      <div class="flex-box">
+          <div class="point" [style.color]='productData.color.color1Text'>
+              <h5>{{ feature.title }}</h5>
+              <i class="fa" [ngClass]="feature.icon"></i>
+              <p>{{ feature.details }}</p>
+              <ul *ngFor="let point of feature.subPoints">
+                <li>{{ point }}</li>
+              </ul>
+            </div>
       </div>
   </div>
+  <div class="features-flex" *ngIf="i%2!=0" [style.background-color]="productData.color.color2" style="flex: 0 0 auto;width:30vw">
+    <div class="flex-box" style="flex: 0 0 auto;">
+        <div class="point" [style.color]='productData.color.color2Text' >
+            <h5>{{ feature.title }}</h5>
+            <i class="fa" [ngClass]="feature.icon"></i>
+            <p>{{ feature.details }}</p>
+            <ul *ngFor="let point of feature.subPoints">
+              <li>{{ point }}</li>
+            </ul>
+          </div>
+    </div>
 </div>
+  </div>
+  <div (click)="scrollRight()" style="position:absolute;right:0;width:50px; height:50px;background:red;">
+    
+    </div>
+</div>
+
 <!-- end of section 2 -->
 
 <!-- Section 3 -->
