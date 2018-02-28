@@ -45,6 +45,7 @@
 .top .details{
     margin-top:50px;
     color:darkslategray;
+    white-space: pre-line;
 }
 
 /* second block */

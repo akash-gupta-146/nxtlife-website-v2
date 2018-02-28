@@ -28,6 +28,7 @@ import { ProductThemeComponent } from './product-theme/product-theme.component';
 import { QualityAssuranceService } from './app-services/quality-assurance.service';
 import { HeaderService } from './app-services/header/header.service';
 import { StrategicPlanningService } from './app-services/strategic-planning.service';
+import { LemService } from './app-services/lem.service';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { StrategicPlanningService } from './app-services/strategic-planning.serv
   providers: [
     QualityAssuranceService,
     HeaderService,
-    StrategicPlanningService],
+    StrategicPlanningService,
+    LemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
