@@ -8,8 +8,14 @@ export class SemService {
     this.SEM = 
     {
       title: 'Stakeholders Experience Management',
-      description: ``,
-      descriptionPoints: [],
+      description: `Vivamus nec ipsum varius, sollicitudin metus id, laoreet nisi. Nullam bibendum faucibus purus a auctor. Nulla facilisis quam purus, eu ultrices leo auctor vitae. Vestibulum a faucibus ipsum. Nulla vitae ornare orci. Donec fermentum, lectus convallis faucibus venenatis, eros ligula egestas velit, eget tincidunt augue ipsum vel mi. Integer accumsan euismod fermentum. Sed fringilla condimentum commodo. Duis et magna odio.`,
+      descriptionPoints:{
+        points:[
+          'Proin euismod vestibulum lectus at ultricies',
+          'Aenean aliquet purus id tincidunt accumsan',
+          'Proin euismod vestibulum lectus at ultricies'
+        ],
+      },
       mainImage: 'assets/images/main-symbols/sem.png',
       features: [
         {

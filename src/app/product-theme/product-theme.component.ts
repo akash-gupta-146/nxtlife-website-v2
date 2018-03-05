@@ -21,6 +21,7 @@ export class ProductThemeComponent implements OnInit {
   startPos: Number = 0;
   changePos: Number = 140;
 
+
   @Input() productData:ProductData;
 
   constructor() {
@@ -58,12 +59,14 @@ export class FeaturesIcon{
   subPoints:string[];
   icon: string;
 }
-
+export class Description{
+  points: string[];
+}
 export class ProductData{
   title:string;
   description:string;
   mainImage:string;
-  descriptionPoints:string[];
+  descriptionPoints:Description;
   features:FeaturesIcon[];
   color:colorSchema;
 }

@@ -22,8 +22,9 @@ export class StrategicPlanningService {
       expensive to be affordable for higher education institutions with small budgets. Our solution is a
       cost effective solution for higher education institutions with budget of any size.
       `,
-      descriptionPoints: [
-      ],
+      descriptionPoints: {
+       points:[] 
+      },
       mainImage: 'assets/images/main-symbols/sp.png',
       features: [
         {

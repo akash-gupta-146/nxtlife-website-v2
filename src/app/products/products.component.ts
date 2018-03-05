@@ -38,19 +38,7 @@ export class ProductsComponent implements OnInit {
           description:'',
           icon:'fa-check',
           route:'qa'
-        },
-        {
-          name:'Learning Experience Management',
-          description:'',
-          icon:'fa-leanpub',
-          route:''
-        },
-        {
-          name:'International University Ranking',
-          description:'',
-          icon:'fa-graduation-cap',
-          route:''
-        },        
+        },     
       ]
 
 

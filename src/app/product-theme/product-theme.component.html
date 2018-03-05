@@ -12,10 +12,8 @@
                 <h1>{{ productData.title }}</h1>
                 <div class="details">
                   {{ productData.description }}
-                  <ul *ngIf="descriptionPoints">
-                    <li *ngFor="let point of productData.descriptionPoints">
-                      {{ point }}
-                    </li>
+                  <ul *ngIf="productData.descriptionPoints.points">
+                    <li *ngFor="let point of productData.descriptionPoints.points">{{ point }}</li>
                   </ul>
                 </div>
               </div>

@@ -9,7 +9,9 @@ export class RmService {
     {
       title: 'Risk Management and Internal Audit',
       description: `Risk assessment is not only with reference to compliance but also includes customer-focused dimension to avoid risks related to brand equity, reputation and image.`,
-      descriptionPoints: [],
+      descriptionPoints: {
+       points:[] 
+      },
       mainImage: 'assets/images/main-symbols/rm.png',
       features: [
         {

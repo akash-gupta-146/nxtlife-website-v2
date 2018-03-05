@@ -15,7 +15,9 @@ export class LemService {
       Increase students retention and enrollment
       Decrease Staff attrition
       `,
-      descriptionPoints: [],
+      descriptionPoints: {
+       points:[] 
+      },
       mainImage: 'assets/images/main-symbols/lem.png',
       features: [
         {

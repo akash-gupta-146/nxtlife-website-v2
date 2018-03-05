@@ -12,12 +12,14 @@ export class QualityAssuranceService {
       title: 'Quality Assurance & Accreditation',
       description: `Approach towards quality assurance in higher education institutes has gone through remarkable evolution over last two decades.
       Many higher education institutes still have`,
-      descriptionPoints: [
+      descriptionPoints: {
+        points:[
         `Primitive approach to quality`,
         `Non-Systematic Quality Assurance System`,
         `Quality Assurance system which is not linked with policy and planning`,
         `Focus mostly on program qualities Assurance`
       ],
+    },
       mainImage: 'assets/images/girl-boy.png',
       features: [
         {
