@@ -2,7 +2,8 @@
     height:80px;
     width:100%;
     background:#323232;
-    position: relative;
+    position: fixed;
+    bottom:0;
 }
 .footer div[text]{
     text-align: center;
